@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Crimson Text', serif;
+}
+body {
+  background-color: aqua;
+}
