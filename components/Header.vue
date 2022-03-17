@@ -1,19 +1,22 @@
 <template>
   <header>
     <nav>
-      <img src="~/assets/images/Title-logo.png" />
+      <h1 hidden>ĐẬU ĐỖ HOUSE</h1>
+      <nuxt-link to="/"
+        ><img class="logo" src="~/assets/images/Title-logo.png"
+      /></nuxt-link>
       <ul>
         <li>
-          <h2><a href="#">About</a></h2>
+          <a href="#">About</a>
         </li>
         <li>
-          <h2><a href="#">Philosopy</a></h2>
+          <a href="#">Philosopy</a>
         </li>
         <li>
-          <h2><a href="#">Newsletter</a></h2>
+          <a href="#">Newsletter</a>
         </li>
         <li>
-          <h2><a href="#">Apply</a></h2>
+          <a href="#">Apply</a>
         </li>
       </ul>
     </nav>
@@ -24,10 +27,4 @@
 export default {}
 </script>
 
-<style scoped>
-header {
-  height: 10vh;
-  background-color: blue;
-  color: red;
-}
-</style>
+<style scoped></style>

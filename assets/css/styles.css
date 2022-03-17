@@ -1,3 +1,23 @@
+/* variables */
+:root {
+  /* colors */
+  --clr-primary: #fbd500;
+  --clr-secondary: #1d6e2f;
+  --clr-tertiary: #fff0ca;
+  --clr-accent: #fc8c78;
+  --clr-text-dark: #474747;
+  --clr-text-light: #fffced;
+
+  /* fonts */
+  --ff-title: ;
+  --ff-sans: 'Montserrat', sans-serif;
+
+  /* effects */
+  --bx-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --bx-logo-shadow: 10px 10px 10px 0px rgba(71, 71, 71, 0.3);
+  --border-rd: 0 0 0.8em 0.8em;
+}
+
 *,
 *::before,
 *::after {
@@ -6,8 +26,86 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Crimson Text', serif;
+  font-family: var(--ff-sans);
+  color: var(--clr-text-dark);
+  font-size: 1.125rem;
+  background-color: var(--clr-tertiary);
 }
+
 body {
-  background-color: aqua;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-size: 4rem;
+}
+
+p {
+  margin-bottom: 0.85em;
+}
+
+/* navigation */
+nav {
+  background-color: var(--clr-text-light);
+  padding: 0.5em;
+  border-radius: var(--border-rd);
+  box-shadow: var(--bx-shadow);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: var(--clr-text-dark);
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--clr-primary);
+  text-decoration: underline;
+}
+
+nav ul li:last-child a {
+  color: var(--clr-accent);
+}
+
+nav ul li:last-child a:hover,
+nav ul li:last-child a:focus {
+  color: var(--clr-primary);
+  text-decoration: underline;
+}
+
+/* buttons */
+
+/* Homepage Styles */
+
+.hero {
+  height: 100vh;
+  background-color: #333;
+  background-image: url(~/assets/images/daodo-circle.jpg);
+  background-blend-mode: multiply;
 }
