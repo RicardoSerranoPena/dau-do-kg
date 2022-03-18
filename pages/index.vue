@@ -17,6 +17,9 @@
           chocolate oat cake caramels jujubes muffin marshmallow. Gingerbread
           oat cake caramels icing topping.
         </p>
+        <div class="card-img-wrapper">
+          <div class="card-img" />
+        </div>
       </div>
       <div class="card">
         <h3 class="card-title">High Quality Learning</h3>
@@ -25,6 +28,9 @@
           Marshmallow candy canes sugar plum bonbon sugar plum. Sweet bonbon
           soufflé dessert apple pie. Jelly-o
         </p>
+        <div class="card-img-wrapper">
+          <div class="card-img" />
+        </div>
       </div>
       <div class="card">
         <h3 class="card-title">The Talented Staff</h3>
@@ -33,6 +39,9 @@
           cake liquorice dessert jelly-o cake jujubes shortbread. Apple pie
           sugar plum gingerbread
         </p>
+        <div class="card-img-wrapper">
+          <div class="card-img" />
+        </div>
       </div>
     </section>
     <section class="about-us">
@@ -90,6 +99,7 @@
           danish wafer tiramisu.
         </p>
         <a href="" class="btn btn-primary">Learn More</a>
+        <img src="~/assets/images/woodplane.png" />
       </div>
     </section>
     <section class="testimonials">
@@ -99,7 +109,9 @@
       <div class="section-body">
         <div class="testimonial-cards">
           <div class="testimonial-card">
-            <img src="~/assets/images/person1.jpg" />
+            <div class="testimonial-img-wrapper">
+              <div class="testimonial-img"></div>
+            </div>
             <h4 class="testimonial-name">Name Lastname</h4>
             <p class="testimonial-role">Parent</p>
             <p class="testimonial-quote">
@@ -109,7 +121,9 @@
             </p>
           </div>
           <div class="testimonial-card">
-            <img src="~/assets/images/person2.jpg" />
+            <div class="testimonial-img-wrapper">
+              <div class="testimonial-img"></div>
+            </div>
             <h4 class="testimonial-name">Name Lastname</h4>
             <p class="testimonial-role">Director</p>
             <p class="testimonial-quote">
@@ -118,9 +132,10 @@
               tiramisu sweet roll chocolate.
             </p>
           </div>
-          img
           <div class="testimonial-card">
-            <img src="~/assets/images/person3.jpg" />
+            <div class="testimonial-img-wrapper">
+              <div class="testimonial-img"></div>
+            </div>
             <h4 class="testimonial-name">Name Lastname</h4>
             <p class="testimonial-role">Major</p>
             <p class="testimonial-quote">
@@ -138,16 +153,22 @@
           <h2>Newsletter</h2>
         </heading>
         <div class="newsletter-card">
-          <img src="~/assets/images/news1.jpg" />
-          <div class="card-date">30<br />T2</div>
+          <div class="newsletter-card-img-wrapper">
+            <div class="newsletter-card-img"></div>
+          </div>
+          <div class="card-date">
+            <div class="date">30<br />T2</div>
+          </div>
           <h3 class="newsletter-card-title">What's on the board</h3>
-          <p class="newsletter-card-body">
-            Cupcake ipsum dolor sit amet carrot cake tiramisu caramels tootsie
-            roll. Chocolate lollipop bonbon pastry jelly wafer lemon drops.
-            Sweet cheesecake cake shortbread gummies jujubes tootsie roll. Bear
-            claw danish sweet roll candy chocolate bar.
-          </p>
-          <a href="" class="">Keep Reading</a>
+          <div class="newsletter-card-body">
+            <p>
+              Cupcake ipsum dolor sit amet carrot cake tiramisu caramels tootsie
+              roll. Chocolate lollipop bonbon pastry jelly wafer lemon drops.
+              Sweet cheesecake cake shortbread gummies jujubes tootsie roll.
+              Bear claw danish sweet roll candy chocolate bar.
+            </p>
+            <a href="" class="">Keep Reading</a>
+          </div>
         </div>
         <a href="" class="btn btn-primary">Read More News</a>
       </div>

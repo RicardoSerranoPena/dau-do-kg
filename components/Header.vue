@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="nav-header">
     <nav>
       <h1 hidden>ĐẬU ĐỖ HOUSE</h1>
       <nuxt-link to="/"

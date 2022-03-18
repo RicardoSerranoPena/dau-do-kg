@@ -14,8 +14,11 @@
 
   /* effects */
   --bx-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  --bx-logo-shadow: 10px 10px 10px 0px rgba(71, 71, 71, 0.3);
-  --border-rd: 0 0 0.8em 0.8em;
+  --drop-shadow-logo: drop-shadow(10px 10px 10px rgba(71, 71, 71, 0.3));
+  --drop-shadow: drop-shadow(10px 10px 10px rgba(71, 71, 71, 0.2));
+  --border-rd-btm: 0 0 0.8em 0.8em;
+  --border-rd-top: 0.8em 0.8em 0 0;
+  --border-rd-all: 0.8em;
 }
 
 *,
@@ -28,7 +31,7 @@ html {
   box-sizing: border-box;
   font-family: var(--ff-sans);
   color: var(--clr-text-dark);
-  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 0.9188rem + 0.9167vw, 1.3rem);
   background-color: var(--clr-tertiary);
 }
 
@@ -39,6 +42,11 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+section {
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
 /* Typography */
@@ -53,7 +61,7 @@ p {
 
 h2,
 h3 {
-  font-size: 4rem;
+  font-size: clamp(2.3rem, 0.275rem + 9vw, 5rem);
 }
 
 p {
@@ -63,9 +71,11 @@ p {
 /* navigation */
 nav {
   background-color: var(--clr-text-light);
-  padding: 0.5em;
-  border-radius: var(--border-rd);
+  border-radius: var(--border-rd-btm);
   box-shadow: var(--bx-shadow);
+  padding: 0.5em;
+  position: relative;
+  z-index: 1000;
 }
 
 nav ul {
@@ -100,12 +110,242 @@ nav ul li:last-child a:focus {
 }
 
 /* buttons */
+a.btn {
+  text-decoration: none;
+  color: var(--clr-text-light);
+  padding: 0.6em 0.8em 0.5em;
+  margin: 1em 0;
+  background-color: var(--clr-secondary);
+  border-radius: var(--border-rd-all);
+  font-weight: 300;
+  display: table;
+}
 
 /* Homepage Styles */
 
 .hero {
-  height: 100vh;
-  background-color: #333;
-  background-image: url(~/assets/images/daodo-circle.jpg);
+  height: 70vh;
+  background-color: #808080;
+  background-image: url(~/assets/images/kids-eating.jpg);
   background-blend-mode: multiply;
+  background-size: cover;
+  position: relative;
+  margin-top: -10px;
+  z-index: 50;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2rem;
+  padding: 0 0.5em;
+  color: var(--clr-primary);
+  text-transform: uppercase;
+}
+
+.cards {
+  padding: 0.5em;
+  position: relative;
+  margin-top: -2rem;
+  z-index: 100;
+}
+.card {
+  background-color: var(--clr-secondary);
+  color: var(--clr-text-light);
+  margin: 0 0 0.5em 0;
+  border-radius: var(--border-rd-all);
+}
+h3.card-title {
+  font-size: clamp(1rem, -0.875rem + 11.4583vw, 3.5rem);
+  padding: 1rem 1rem 0;
+}
+p.card-body {
+  padding: 1rem;
+}
+.card-img-wrapper {
+  width: 20rem;
+  height: 10rem;
+  max-width: 100%;
+}
+.card-img {
+  border-radius: 2em 2em 0.8em 0.8em;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-primary);
+  background-image: url(~/assets/images/card1.jpg);
+  background-position: center;
+  background-size: 22rem;
+}
+
+.card:nth-child(2) .card-img {
+  background-image: url(~/assets/images/card2.jpg);
+}
+
+.card:nth-child(3) .card-img {
+  background-image: url(~/assets/images/card3.jpg);
+}
+
+header h2 {
+  padding-bottom: 0.5em;
+}
+
+.about-us .body-right {
+  display: none;
+}
+
+.our-philosophy {
+  background-color: var(--clr-primary);
+  border-radius: var(--border-rd-all);
+  margin-bottom: 0;
+  position: relative;
+  z-index: 50;
+}
+
+.our-philosophy .section-title {
+  margin-top: 0.5em;
+}
+
+.our-philosophy img {
+  -webkit-filter: var(--drop-shadow);
+  filter: var(--drop-shadow);
+}
+
+.testimonials {
+  background-color: var(--clr-text-dark);
+  background-image: url(~/assets/images/lollipop-doodle.jpg);
+  background-blend-mode: multiply;
+  background-size: 100%;
+  position: relative;
+  margin-top: -1em;
+  z-index: 10;
+}
+
+.testimonials .section-title {
+  color: var(--clr-primary);
+  text-align: center;
+  margin: 1em;
+}
+
+.testimonials .testimonial-card {
+  background-color: var(--clr-tertiary);
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: var(--border-rd-all);
+  text-align: center;
+}
+
+.testimonials .testimonial-img-wrapper {
+  width: 14rem;
+  height: 14rem;
+  max-width: 100%;
+  margin: 1em auto;
+}
+
+.testimonials .testimonial-img-wrapper .testimonial-img {
+  background-image: url(~/assets/images/person1.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: top;
+  background-size: 14rem;
+  border-radius: 50%;
+}
+
+.testimonials .testimonial-card:nth-child(2) .testimonial-img {
+  background-image: url(~/assets/images/person2.jpg);
+  background-size: 15rem;
+}
+
+.testimonials .testimonial-card:nth-child(3) .testimonial-img {
+  background-image: url(~/assets/images/person3.jpg);
+}
+
+.testimonial-card .testimonial-name {
+  margin: 1em 0;
+}
+.testimonial-card .testimonial-role {
+  color: var(--clr-secondary);
+}
+
+.testimonial-card .testimonial-quote {
+  margin: 1em 0;
+}
+
+.newsletter-resources {
+  position: relative;
+  padding: 0;
+}
+
+.newsletter {
+  position: relative;
+  margin-top: -2em;
+  z-index: 100;
+  background-color: var(--clr-primary);
+  border-radius: var(--border-rd-all);
+  padding: 2em 1em;
+}
+
+.newsletter heading {
+  margin: 1em;
+  text-align: center;
+}
+
+.newsletter .newsletter-card {
+  background-color: var(--clr-tertiary);
+  border-radius: var(--border-rd-all);
+}
+
+.newsletter .newsletter-card-img-wrapper {
+  width: 100%;
+  height: 13rem;
+  max-width: 100%;
+}
+
+.newsletter .newsletter-card-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(~/assets/images/news1.jpg);
+  background-color: var(--clr-secondary);
+  background-size: 22rem;
+  background-position: center;
+  border-radius: var(--border-rd-all);
+}
+
+.newsletter .card-date {
+  background-color: var(--clr-secondary);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--border-rd-all);
+  margin: -2em 2em 0 auto;
+}
+
+.newsletter .card-date {
+  text-align: center;
+}
+
+.newsletter .card-date .date {
+  vertical-align: middle;
+  margin-bottom: 0;
+  display: inline-block;
+  line-height: normal;
+}
+
+.newsletter .newsletter-card-title {
+  font-size: clamp(1.5rem, 1.125rem + 1.6667vw, 2rem);
+  padding: 1rem;
+}
+
+.newsletter .newsletter-card-body {
+  padding: 0 1em 2em;
+}
+
+.newsletter .newsletter-card-body a {
+  color: var(--clr-text-dark);
+  font-weight: bold;
+  margin-top: 2em;
+  display: block;
 }
