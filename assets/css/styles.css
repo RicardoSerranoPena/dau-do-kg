@@ -112,13 +112,88 @@ nav ul li:last-child a:focus {
 /* buttons */
 a.btn {
   text-decoration: none;
-  color: var(--clr-text-light);
   padding: 0.6em 0.8em 0.5em;
   margin: 1em 0;
-  background-color: var(--clr-secondary);
   border-radius: var(--border-rd-all);
   font-weight: 300;
   display: table;
+}
+
+.btn-form {
+  font-weight: 400;
+}
+
+.btn-primary {
+  background-color: var(--clr-secondary);
+  color: var(--clr-text-light);
+}
+
+.btn-secondary {
+  background-color: var(--clr-primary);
+  color: var(--clr-text-dark);
+}
+
+/* forms */
+form {
+  padding: 1em;
+}
+
+form label {
+  display: none;
+}
+
+form input {
+  width: 100%;
+  padding: 0.2em 0.65em;
+  margin: 0.6em 0;
+  border: rgba(0, 0, 0, 0.5) solid 1px;
+  border-radius: var(--border-rd-all);
+}
+
+form input {
+  font-size: clamp(1rem, 0.9188rem + 0.9167vw, 1.3rem);
+  font-weight: lighter;
+  box-shadow: var(--bx-shadow);
+}
+
+/* footer */
+footer {
+  background-color: var(--clr-primary);
+  border-radius: var(--border-rd-top);
+  position: relative;
+  z-index: 100;
+  margin-top: -1em;
+  text-align: center;
+}
+
+footer .title {
+  font-size: clamp(1.5rem, 1.125rem + 1.6667vw, 2rem);
+  padding-bottom: 1em;
+}
+
+footer .footer-logo {
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+footer .section {
+  padding: 1em 0 1.4em;
+}
+
+footer .footer-contact-us img {
+  height: 1em;
+  width: 1em;
+  margin-right: 0.3em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer .footer-contact-us p {
+  display: inline-block;
+}
+
+footer .footer-subscribe-newsletter .title {
+  padding-bottom: 0;
 }
 
 /* Homepage Styles */
@@ -321,17 +396,15 @@ header h2 {
   height: 3.5rem;
   border-radius: var(--border-rd-all);
   margin: -2em 2em 0 auto;
-}
-
-.newsletter .card-date {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .newsletter .card-date .date {
-  vertical-align: middle;
-  margin-bottom: 0;
-  display: inline-block;
-  line-height: normal;
+  text-align: center;
+  color: var(--clr-text-light);
+  font-weight: bold;
 }
 
 .newsletter .newsletter-card-title {
@@ -348,4 +421,70 @@ header h2 {
   font-weight: bold;
   margin-top: 2em;
   display: block;
+}
+
+.resources {
+  position: relative;
+  margin-top: -2em;
+  z-index: 100;
+  background-color: var(--clr-tertiary);
+  border-radius: var(--border-rd-all);
+  padding: 2em 1em;
+}
+
+.resources heading {
+  margin: 1em;
+  text-align: center;
+}
+
+.resources .resources-cards {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.resources .resources-card {
+  background-color: var(--clr-secondary);
+  border-radius: var(--border-rd-all);
+  color: var(--clr-text-light);
+  text-align: center;
+}
+
+.enroll {
+  background-color: #808080;
+  background-image: url(~/assets/images/news2.jpg);
+  background-blend-mode: multiply;
+  background-size: 100vh;
+  display: relative;
+  margin-top: -1.5em;
+  margin-bottom: 0;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.enroll .enroll-card {
+  background-color: var(--clr-secondary);
+  border-radius: var(--border-rd-all);
+  color: var(--clr-text-light);
+}
+
+.enroll .enroll-img-wrapper {
+  width: 100%;
+  height: 13rem;
+  max-width: 100%;
+}
+
+.enroll .enroll-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(~/assets/images/apply1.jpg);
+  background-color: var(--clr-primary);
+  background-size: 22rem;
+  background-position: center;
+  border-radius: var(--border-rd-all);
+}
+
+.enroll .form-title {
+  font-size: clamp(1.5rem, 1.125rem + 1.6667vw, 2rem);
+  padding: 1rem 1rem 0;
 }

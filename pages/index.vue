@@ -194,12 +194,14 @@
             <p class="resources-card-title">Resources on Parenting</p>
           </div>
         </div>
-        <a href="" class="btn btn-primary">Get More Resources</a>
+        <a href="" class="btn btn-secondary">Get More Resources</a>
       </div>
     </section>
     <section class="enroll">
       <div class="enroll-card">
-        <img src="~/assets/images/apply1.jpg" />
+        <div class="enroll-img-wrapper">
+          <div class="enroll-img"></div>
+        </div>
         <div class="apply-form">
           <Heading>
             <h2 class="form-title">Enroll Today</h2>
@@ -212,10 +214,14 @@
               <input type="text" id="last-name" placeholder="Last Name" />
             </div>
             <label for="email">Email</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" placeholder="Email Address" />
             <label for="phone">Phone</label>
-            <input type="text" id="phone" />
-            <input type="submit" value="Submit" />
+            <input type="text" id="phone" placeholder="Phone Number" />
+            <input
+              type="submit"
+              value="Enroll"
+              class="btn-form btn-secondary"
+            />
           </form>
         </div>
       </div>
