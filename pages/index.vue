@@ -9,38 +9,40 @@
       </header>
     </section>
 
-    <section class="cards">
-      <div class="card">
-        <h3 class="card-title">Licensed Child Care</h3>
-        <p class="card-body">
-          Cupcake ipsum dolor sit amet jelly beans gummies. Sweet chupa chups
-          chocolate oat cake caramels jujubes muffin marshmallow. Gingerbread
-          oat cake caramels icing topping.
-        </p>
-        <div class="card-img-wrapper">
-          <div class="card-img" />
+    <section class="highlights">
+      <div class="cards">
+        <div class="card">
+          <h3 class="card-title">Licensed Child Care</h3>
+          <p class="card-body">
+            Cupcake ipsum dolor sit amet jelly beans gummies. Sweet chupa chups
+            chocolate oat cake caramels jujubes muffin marshmallow. Gingerbread
+            oat cake caramels icing topping.
+          </p>
+          <div class="card-img-wrapper">
+            <div class="card-img" />
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <h3 class="card-title">High Quality Learning</h3>
-        <p class="card-body">
-          Cupcake ipsum dolor sit amet cotton candy candy tootsie roll.
-          Marshmallow candy canes sugar plum bonbon sugar plum. Sweet bonbon
-          soufflé dessert apple pie. Jelly-o
-        </p>
-        <div class="card-img-wrapper">
-          <div class="card-img" />
+        <div class="card">
+          <h3 class="card-title">High Quality Learning</h3>
+          <p class="card-body">
+            Cupcake ipsum dolor sit amet cotton candy candy tootsie roll.
+            Marshmallow candy canes sugar plum bonbon sugar plum. Sweet bonbon
+            soufflé dessert apple pie. Jelly-o
+          </p>
+          <div class="card-img-wrapper">
+            <div class="card-img" />
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <h3 class="card-title">The Talented Staff</h3>
-        <p class="card-body">
-          Cupcake ipsum dolor sit amet lollipop marshmallow. Sweet chocolate
-          cake liquorice dessert jelly-o cake jujubes shortbread. Apple pie
-          sugar plum gingerbread
-        </p>
-        <div class="card-img-wrapper">
-          <div class="card-img" />
+        <div class="card">
+          <h3 class="card-title">The Talented Staff</h3>
+          <p class="card-body">
+            Cupcake ipsum dolor sit amet lollipop marshmallow. Sweet chocolate
+            cake liquorice dessert jelly-o cake jujubes shortbread. Apple pie
+            sugar plum gingerbread
+          </p>
+          <div class="card-img-wrapper">
+            <div class="card-img" />
+          </div>
         </div>
       </div>
     </section>
@@ -107,8 +109,8 @@
         <h2 class="section-title">Testimonials</h2>
       </header>
       <div class="section-body">
-        <div class="testimonial-cards">
-          <div class="testimonial-card">
+        <div class="cards">
+          <div class="card testimonial-card">
             <div class="testimonial-img-wrapper">
               <div class="testimonial-img"></div>
             </div>
@@ -120,7 +122,7 @@
               tiramisu sweet roll chocolate.
             </p>
           </div>
-          <div class="testimonial-card">
+          <div class="card testimonial-card">
             <div class="testimonial-img-wrapper">
               <div class="testimonial-img"></div>
             </div>
@@ -132,7 +134,7 @@
               tiramisu sweet roll chocolate.
             </p>
           </div>
-          <div class="testimonial-card">
+          <div class="card testimonial-card">
             <div class="testimonial-img-wrapper">
               <div class="testimonial-img"></div>
             </div>
@@ -197,10 +199,10 @@
         <a href="" class="btn btn-secondary">Get More Resources</a>
       </div>
     </section>
-    <section class="enroll">
-      <div class="enroll-card">
-        <div class="enroll-img-wrapper">
-          <div class="enroll-img"></div>
+    <section class="apply">
+      <div class="apply-card">
+        <div class="apply-img-wrapper">
+          <div class="apply-img"></div>
         </div>
         <div class="apply-form">
           <Heading>

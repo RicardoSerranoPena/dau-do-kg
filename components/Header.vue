@@ -1,10 +1,10 @@
 <template>
   <header class="nav-header">
+    <h1 hidden>ĐẬU ĐỖ HOUSE</h1>
+    <nuxt-link to="/"
+      ><img class="logo" src="~/assets/images/Title-logo.png"
+    /></nuxt-link>
     <nav>
-      <h1 hidden>ĐẬU ĐỖ HOUSE</h1>
-      <nuxt-link to="/"
-        ><img class="logo" src="~/assets/images/Title-logo.png"
-      /></nuxt-link>
       <ul>
         <li>
           <a href="#">About</a>
@@ -16,7 +16,7 @@
           <a href="#">Newsletter</a>
         </li>
         <li>
-          <a href="#">Apply</a>
+          <a href="#" class="clr-accent">Apply</a>
         </li>
       </ul>
     </nav>
