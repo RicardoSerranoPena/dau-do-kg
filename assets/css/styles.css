@@ -182,36 +182,50 @@ nav ul li a:focus {
   text-decoration: underline;
 }
 
+@media only screen and (min-width: 700px) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+  nav {
+    margin-left: auto;
+  }
+  nav li {
+    padding-left: 0.5em;
+  }
+}
+
 /*--------------
     Footer
   --------------*/
 footer {
   position: relative;
   z-index: 100;
-  display: flex;
+  display: grid;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: -1em;
+  padding: 1em;
 }
 
 .footer {
   text-align: center;
   font-size: 0.85rem;
-  font-size: clamp(0.85rem, 0.77rem + 0.4vw, 1.25rem);
+  font-size: clamp(0.75rem, 0.7rem + 0.3vw, 1.125rem);
   background-color: var(--clr-primary);
   border-radius: var(--border-rd-top);
 }
 
 .footer > * {
-  width: max(21vw, 20rem);
   margin: 0 auto;
   padding: 1em 0;
+  align-self: center;
 }
 
 .footer .title {
   font-size: 1.25rem;
-  font-size: clamp(1.25rem, 1.17rem + 0.4vw, 1.65rem);
+  font-size: clamp(1.125rem, 1.17rem + 0.3vw, 1.5rem);
   padding-bottom: 0.5em;
 }
 
@@ -236,6 +250,7 @@ footer {
 form.subscribe {
   padding-top: 0;
   display: inline-flex;
+  max-width: 100%;
 }
 
 form.subscribe #subscribe-email {
@@ -250,6 +265,34 @@ form.subscribe #subscribe-button {
   padding: 0 0.75em;
   margin-left: -6.1rem;
   box-shadow: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .footer {
+    grid-template-areas:
+      '    lg lg lg lg     cont cont cont hrs hrs hrs'
+      'subs subs subs subs cont cont cont hrs hrs hrs';
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 1em;
+  }
+  .footer-logo {
+    grid-area: lg;
+  }
+  .footer-contact-us {
+    grid-area: cont;
+  }
+  .footer-working-hours {
+    grid-area: hrs;
+  }
+  .footer-subscribe {
+    grid-area: subs;
+  }
 }
 
 /*--------------
@@ -285,7 +328,7 @@ form.subscribe #subscribe-button {
 
 .highlights {
   position: relative;
-  margin-top: -3.5rem;
+  margin-top: -4rem;
   z-index: 50;
 }
 
@@ -293,7 +336,6 @@ form.subscribe #subscribe-button {
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
-  margin: 0 1rem;
 }
 
 .card {
@@ -333,7 +375,7 @@ form.subscribe #subscribe-button {
   background-image: url(~/assets/images/card1.jpg);
   background-position: center;
   background-size: 22rem;
-  border-radius: 2em 2em 0.8em 0.8em;
+  border-radius: 4em 4em 0.8em 0.8em;
 }
 
 .card:nth-child(2) .card-img {
@@ -349,8 +391,24 @@ form.subscribe #subscribe-button {
   text-align: center;
 }
 
+.about-us,
+.our-philosophy,
+.apply {
+  padding: clamp(1em, 0.5em + 7vw, 3em) clamp(1em, 0.5em + 7vw, 5em);
+}
+
+.about-us .section-title {
+  margin-top: 0;
+}
+
 .about-us .body-right {
   display: none;
+}
+
+.about-us img {
+  width: 100%;
+  border-radius: var(--border-rd-all);
+  max-width: 400px;
 }
 
 .our-philosophy {
@@ -363,10 +421,11 @@ form.subscribe #subscribe-button {
 .our-philosophy img {
   -webkit-filter: var(--drop-shadow);
   filter: var(--drop-shadow);
+  margin: 0 auto;
 }
 
 .testimonials {
-  background-color: var(--clr-text-dark);
+  background-color: #808080;
   background-image: url(~/assets/images/lollipop-doodle.jpg);
   background-blend-mode: multiply;
   background-size: 100%;
@@ -583,5 +642,76 @@ form.subscribe #subscribe-button {
     width: calc(10rem + 15vw);
     max-width: 25rem;
     height: auto;
+  }
+
+  .newsletter-resources {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .resources-cards {
+    margin: auto 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .hero {
+    background-image: url(~/assets/images/daodo-circle.jpg);
+    background-position: bottom;
+  }
+
+  .about-us .section-body,
+  .our-philosophy .section-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'left left left right right';
+    gap: 1em;
+    justify-items: center;
+  }
+
+  .about-us .body-left,
+  .our-philosophy .body-left {
+    grid-area: left;
+  }
+
+  .about-us .body-right,
+  .our-philosophy .body-right {
+    display: block;
+    grid-area: right;
+    z-index: 100;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .highlights {
+    padding: 0 clamp(0.5em, 0.5em + 2vw, 5em);
+  }
+  .about-us .body-right {
+    margin-bottom: -8em;
+  }
+
+  .our-philosophy .section-title {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .about-us,
+  .our-philosophy,
+  .testimonials,
+  .highlights,
+  .apply {
+    padding: 3.5em 7.5em;
+  }
+
+  .highlights {
+    margin-top: -8em;
+  }
+
+  .cards {
+    justify-content: space-between;
+  }
+  .card {
+    width: 16rem;
   }
 }

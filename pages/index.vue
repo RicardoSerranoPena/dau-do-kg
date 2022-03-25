@@ -83,25 +83,29 @@
         <h2 class="section-title">Our Philosophy</h2>
       </header>
       <div class="section-body">
-        <p>
-          Cupcake ipsum dolor sit amet apple pie marzipan cookie. Pie candy
-          canes ice cream dragée brownie. Carrot cake bear claw pie liquorice
-          toffee gummies.
-        </p>
-        <p>
-          Topping candy canes pudding biscuit lollipop pudding apple pie
-          chocolate cake. Macaroon gummi bears cake sugar plum croissant apple
-          pie dragée. Candy jelly beans biscuit candy canes dessert ice cream
-          pie. Icing tart macaroon gingerbread toffee bear claw wafer.
-        </p>
-        <p>
-          Gingerbread shortbread gummies carrot cake tootsie roll oat cake
-          wafer. Croissant sweet roll cheesecake pie ice cream. Wafer cupcake
-          croissant cotton candy carrot cake candy cupcake. Powder jelly-o
-          danish wafer tiramisu.
-        </p>
-        <a href="" class="btn btn-primary">Learn More</a>
-        <img src="~/assets/images/woodplane.png" />
+        <div class="body-left">
+          <p>
+            Cupcake ipsum dolor sit amet apple pie marzipan cookie. Pie candy
+            canes ice cream dragée brownie. Carrot cake bear claw pie liquorice
+            toffee gummies.
+          </p>
+          <p>
+            Topping candy canes pudding biscuit lollipop pudding apple pie
+            chocolate cake. Macaroon gummi bears cake sugar plum croissant apple
+            pie dragée. Candy jelly beans biscuit candy canes dessert ice cream
+            pie. Icing tart macaroon gingerbread toffee bear claw wafer.
+          </p>
+          <p>
+            Gingerbread shortbread gummies carrot cake tootsie roll oat cake
+            wafer. Croissant sweet roll cheesecake pie ice cream. Wafer cupcake
+            croissant cotton candy carrot cake candy cupcake. Powder jelly-o
+            danish wafer tiramisu.
+          </p>
+          <a href="" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="body-right">
+          <img src="~/assets/images/woodplane.png" />
+        </div>
       </div>
     </section>
     <section class="testimonials">
