@@ -155,9 +155,9 @@
     </section>
     <section class="newsletter-resources">
       <div class="newsletter">
-        <heading>
-          <h2>Newsletter</h2>
-        </heading>
+        <header>
+          <h2 class="section-title">Newsletter</h2>
+        </header>
         <div class="newsletter-card">
           <div class="newsletter-card-img-wrapper">
             <div class="newsletter-card-img"></div>
@@ -179,9 +179,9 @@
         <a href="" class="btn btn-primary">Read More News</a>
       </div>
       <div class="resources">
-        <heading>
-          <h2>Resources</h2>
-        </heading>
+        <header>
+          <h2 class="section-title">Resources</h2>
+        </header>
         <div class="resources-cards">
           <div class="resources-card">
             <img src="~/assets/images/document-icon.png" alt="" />
@@ -209,9 +209,9 @@
           <div class="apply-img"></div>
         </div>
         <div class="apply-form">
-          <Heading>
+          <header>
             <h2 class="form-title">Enroll Today</h2>
-          </Heading>
+          </header>
           <form>
             <div class="form-group">
               <label for="first-name">First Name</label>

@@ -72,6 +72,21 @@ section {
   margin-bottom: 1em;
 }
 
+.sr-only {
+  position: absolute;
+  margin: -1px 0 0 -1px;
+  padding: 0;
+  display: block;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  outline: 0;
+}
+
 /* Typography */
 h1,
 h2,
@@ -92,7 +107,7 @@ p {
 }
 
 .clr-accent {
-  color: var(--clr-accent);
+  color: var(--clr-accent) !important;
 }
 
 /* Buttons */
@@ -153,15 +168,28 @@ input {
     Navigation 
   --------------*/
 .nav-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 500;
+
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+
   background-color: var(--clr-text-light);
   border-radius: var(--border-rd-btm);
   box-shadow: var(--bx-shadow);
-  padding: 0.5em;
-  position: relative;
+}
+
+.nav-header .logo {
   z-index: 1000;
 }
 
-nav ul {
+.mobile-nav-toggle {
+  display: none;
+}
+
+.primary-nav-bar {
   display: flex;
   list-style: none;
   margin: 0;
@@ -169,29 +197,72 @@ nav ul {
   justify-content: space-around;
 }
 
-nav a {
+.primary-nav-bar a {
   display: inline-block;
-  padding: 0.5em;
   text-decoration: none;
   color: var(--clr-text-dark);
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
+.primary-nav-bar li a:hover,
+.primary-nav-bar li a:focus {
   color: var(--clr-primary);
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 700px) {
-  header {
-    display: flex;
+@media only screen and (max-width: 699px) {
+  .primary-nav-bar {
+    gap: 2em;
+    font-size: larger;
+
+    position: fixed;
+    inset: 0 0 40% 0;
+    z-index: 500;
+
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
+    background-color: var(--clr-text-light);
+    border-radius: var(--border-rd-btm);
+    box-shadow: var(--bx-shadow);
+
+    transform: translateY(-110%);
+    transition: transform 400ms ease-out;
   }
-  nav {
-    margin-left: auto;
+
+  .primary-nav-bar[data-visible='true'] {
+    transform: translateX(0%);
   }
-  nav li {
-    padding-left: 0.5em;
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background-color: transparent;
+    background-image: url('~/assets/images/icon-hamburger.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    top: 1.35rem;
+    right: 1.5rem;
+  }
+
+  .mobile-nav-toggle[aria-expanded='true'] {
+    background-image: url('~/assets/images/icon-close.png');
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .nav-header {
+    justify-content: space-between;
+  }
+  .primary-nav-bar {
+    padding: 0 2vw;
+  }
+  .primary-nav-bar li {
+    padding-left: 5vw;
   }
 }
 
