@@ -115,6 +115,7 @@ p {
   display: table;
   text-decoration: none;
   border-radius: var(--border-rd-all);
+  box-shadow: var(--bx-shadow);
   padding: 0.6em 0.8em 0.5em;
   margin: 1em 0;
   font-weight: 300;
@@ -181,8 +182,8 @@ input {
   box-shadow: var(--bx-shadow);
 }
 
-.nav-header .logo {
-  z-index: 1000;
+.nav-header img.logo {
+  z-index: 9999;
 }
 
 .mobile-nav-toggle {
@@ -226,12 +227,19 @@ input {
     border-radius: var(--border-rd-btm);
     box-shadow: var(--bx-shadow);
 
-    transform: translateY(-110%);
-    transition: transform 400ms ease-out;
+    transform: translateY(-78%);
+    transition: transform 300ms ease-out;
   }
 
   .primary-nav-bar[data-visible='true'] {
     transform: translateX(0%);
+  }
+
+  .nav-header img.logo {
+    z-index: 9999;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
   }
 
   .mobile-nav-toggle {
@@ -300,7 +308,12 @@ footer {
   padding-bottom: 0.5em;
 }
 
-.footer-logo {
+.footer-logo-full {
+  display: none;
+}
+
+.footer-logo,
+.footer-logo-full {
   max-width: 12rem;
   margin: 0 auto;
   filter: var(--drop-shadow-logo);
@@ -342,6 +355,12 @@ form.subscribe #subscribe-button {
   .footer {
     grid-template-columns: 1fr 1fr;
   }
+  .footer-logo {
+    display: none;
+  }
+  .footer-logo-full {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 1050px) {
@@ -352,7 +371,12 @@ form.subscribe #subscribe-button {
     grid-template-columns: repeat(10, 1fr);
     column-gap: 1em;
   }
+  .footer-logo-full {
+    display: none;
+    grid-area: lg;
+  }
   .footer-logo {
+    display: block;
     grid-area: lg;
   }
   .footer-contact-us {
@@ -363,6 +387,19 @@ form.subscribe #subscribe-button {
   }
   .footer-subscribe {
     grid-area: subs;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-logo-full {
+    display: block;
   }
 }
 
@@ -415,6 +452,7 @@ form.subscribe #subscribe-button {
   width: 17rem;
   margin: 0 0.25em 1em;
   border-radius: var(--border-rd-all);
+  box-shadow: var(--bx-shadow);
   text-align: center;
 }
 
@@ -479,6 +517,7 @@ form.subscribe #subscribe-button {
 .about-us img {
   width: 100%;
   border-radius: var(--border-rd-all);
+  box-shadow: var(--bx-shadow);
   max-width: 400px;
 }
 
@@ -562,6 +601,7 @@ form.subscribe #subscribe-button {
 .newsletter-resources > * {
   position: relative;
   border-radius: var(--border-rd-all);
+  box-shadow: var(--bx-shadow);
   margin-top: -2em;
   padding: 2em 1em;
   z-index: 50;
@@ -586,6 +626,7 @@ form.subscribe #subscribe-button {
 .newsletter-card {
   background-color: var(--clr-tertiary);
   border-radius: var(--border-rd-all);
+  box-shadow: var(--bx-shadow);
   max-width: 25rem;
 }
 
@@ -610,6 +651,7 @@ form.subscribe #subscribe-button {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: var(--border-rd-all);
+  box-shadow: var(--bx-shadow);
   margin: -2em 2em 0 auto;
   display: flex;
   justify-content: center;
@@ -647,6 +689,7 @@ form.subscribe #subscribe-button {
 .resources-card {
   background-color: var(--clr-secondary);
   border-radius: var(--border-rd-all);
+  box-shadow: var(--bx-shadow);
   color: var(--clr-text-light);
   text-align: center;
 }
@@ -667,6 +710,7 @@ form.subscribe #subscribe-button {
 .apply-card {
   background-color: var(--clr-secondary);
   border-radius: var(--border-rd-all);
+  box-shadow: var(--bx-shadow);
   color: var(--clr-text-light);
   margin: 1em 0;
   display: block;

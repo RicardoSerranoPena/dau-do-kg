@@ -1,6 +1,7 @@
 <template>
   <footer class="footer">
     <img class="footer-logo" src="~/assets/images/Title-logo.png" />
+    <img class="footer-logo-full" src="~/assets/images/ddhk-logo.png" />
     <div class="footer-contact-us">
       <h4 class="title">Contact Us</h4>
       <div>
