@@ -21,7 +21,7 @@
           <a href="#">Philosopy</a>
         </li>
         <li>
-          <a href="#">Newsletter</a>
+          <a href="/Newsletters">Newsletter</a>
         </li>
         <li>
           <a href="#" class="clr-accent">Apply</a>

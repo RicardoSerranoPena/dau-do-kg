@@ -107,7 +107,7 @@ p {
 }
 
 .clr-accent {
-  color: var(--clr-accent) !important;
+  color: var(--clr-accent);
 }
 
 /* Buttons */
@@ -202,6 +202,10 @@ input {
   display: inline-block;
   text-decoration: none;
   color: var(--clr-text-dark);
+}
+
+.primary-nav-bar .clr-accent {
+  color: var(--clr-accent);
 }
 
 .primary-nav-bar li a:hover,

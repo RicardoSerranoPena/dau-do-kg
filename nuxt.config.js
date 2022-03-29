@@ -128,7 +128,16 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/apollo'],
+
+  // Apollo config
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'https://graphql.cosmicjs.com/v3',
+      },
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

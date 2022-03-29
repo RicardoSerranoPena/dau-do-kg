@@ -1,0 +1,13 @@
+query ($bucket_slug: String!, $read_key: String!) {
+  getObjects(
+    bucket_slug: $bucket_slug
+    read_key: $read_key
+    input: { limit: 20, query: { type: "newsletters" } }
+  ) {
+    objects {
+      id
+      title
+      metadata
+    }
+  }
+}
