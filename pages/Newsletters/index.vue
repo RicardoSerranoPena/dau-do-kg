@@ -1,10 +1,32 @@
 <template>
   <main>
-    <h1>Newsletters</h1>
-    {{ getObjects }}
-    <div v-for="newsletter in getObjects.objects" :key="newsletter.title">
-      <nuxt-link :to="'/Newsletters/' + newsletter.id">
-        <div class="title">{{ newsletter.title }}</div>
+    <header class="section-title">
+      <h1>Newsletters</h1>
+    </header>
+    <!-- {{ getObjects }} -->
+    <div
+      v-for="{ id, title, metadata } in getObjects.objects"
+      :key="title"
+      class="newsletter-cards"
+    >
+      <nuxt-link :to="'/Newsletters/' + id" class="card-newsletter">
+        <div
+          class="card-newsletter-hero"
+          v-bind:style="{
+            backgroundImage: 'url(' + metadata.hero.url + ')',
+          }"
+        ></div>
+        <div class="card-newsletter-body">
+          <div class="card-newsletter-title">
+            {{ title }}
+          </div>
+          <div class="card-newsletter-description">
+            <p>{{ metadata.description }}</p>
+          </div>
+          <div class="card-newsletter-date">
+            <p>{{ metadata.date }}</p>
+          </div>
+        </div>
       </nuxt-link>
     </div>
   </main>

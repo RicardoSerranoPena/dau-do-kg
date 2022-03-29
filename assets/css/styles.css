@@ -834,3 +834,41 @@ form.subscribe #subscribe-button {
     width: 16rem;
   }
 }
+
+/*--------------
+  Newsletters Page 
+  --------------*/
+
+.newsletter-cards {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: var(--clr-secondary);
+  border-radius: var(--border-rd-all);
+}
+.card-newsletter {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-areas: 'hero body';
+}
+a.card-newsletter {
+  text-decoration: none;
+  color: var(--clr-text-light);
+}
+.card-newsletter-hero {
+  width: 12rem;
+  /* height: 8rem; */
+  background-size: cover;
+  grid-area: hero;
+  border-radius: var(--border-rd-all);
+}
+.card-newsletter-body {
+  grid-area: body;
+  padding: 1rem;
+}
+.card-newsletter-title {
+  font-size: clamp(1.25rem, 0.84rem + 0.8vw, 1.8rem);
+}
+
+.card-newsletter-description {
+}
