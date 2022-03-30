@@ -96,6 +96,11 @@ p {
   margin: 0;
 }
 
+h1 {
+  font-size: 2.125rem;
+  font-size: clamp(2.125rem, 1.925rem + 1vw, 3.125rem);
+}
+
 h2,
 h3 {
   font-size: 2rem;
@@ -231,7 +236,7 @@ input {
     border-radius: var(--border-rd-btm);
     box-shadow: var(--bx-shadow);
 
-    transform: translateY(-78%);
+    transform: translateY(-79%);
     transition: transform 300ms ease-out;
   }
 
@@ -839,36 +844,83 @@ form.subscribe #subscribe-button {
   Newsletters Page 
   --------------*/
 
+.newsletters-page {
+  padding-top: 7rem;
+}
+
 .newsletter-cards {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
-  background-color: var(--clr-secondary);
-  border-radius: var(--border-rd-all);
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 1rem 5rem;
 }
+
 .card-newsletter {
   display: grid;
+  max-width: 45rem;
+
+  background-color: var(--clr-secondary);
+  border-radius: var(--border-rd-all);
+  box-shadow: var(--bx-shadow);
+  transform: translateY(0%);
+  transition: 200ms ease;
+}
+
+.card-newsletter:hover {
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5%);
+  transition: 350ms ease;
+}
+
+.card-newsletter a:focus {
+  outline-color: var(--clr-accent);
+  outline-offset: 5px;
+}
+
+.card-newsletter a {
+  display: block;
   grid-template-columns: 2;
   grid-template-areas: 'hero body';
-}
-a.card-newsletter {
+  border-radius: var(--border-rd-all);
+
   text-decoration: none;
   color: var(--clr-text-light);
 }
+
 .card-newsletter-hero {
-  width: 12rem;
-  /* height: 8rem; */
-  background-size: cover;
+  width: auto;
+  height: 10rem;
   grid-area: hero;
+
+  background-size: cover;
+  background-position: center;
   border-radius: var(--border-rd-all);
 }
+
 .card-newsletter-body {
   grid-area: body;
   padding: 1rem;
 }
-.card-newsletter-title {
+
+.card-newsletter-title h2 {
   font-size: clamp(1.25rem, 0.84rem + 0.8vw, 1.8rem);
+  font-weight: 500;
+  margin-bottom: 0.5em;
 }
 
-.card-newsletter-description {
+.card-newsletter-date p {
+  text-align: right;
+  font-weight: 300;
+  margin: 2em 0 0;
+}
+
+@media only screen and (min-width: 550px) {
+  .card-newsletter a {
+    display: grid;
+  }
+  .card-newsletter-hero {
+    width: clamp(12rem, 10rem + 5vw, 20rem);
+    height: auto;
+  }
 }

@@ -1,33 +1,34 @@
 <template>
-  <main>
+  <main class="newsletters-page">
     <header class="section-title">
       <h1>Newsletters</h1>
     </header>
-    <!-- {{ getObjects }} -->
-    <div
-      v-for="{ id, title, metadata } in getObjects.objects"
-      :key="title"
-      class="newsletter-cards"
-    >
-      <nuxt-link :to="'/Newsletters/' + id" class="card-newsletter">
-        <div
-          class="card-newsletter-hero"
-          v-bind:style="{
-            backgroundImage: 'url(' + metadata.hero.url + ')',
-          }"
-        ></div>
-        <div class="card-newsletter-body">
-          <div class="card-newsletter-title">
-            {{ title }}
+    <div class="newsletter-cards">
+      <div
+        v-for="{ id, title, metadata } in getObjects.objects"
+        :key="title"
+        class="card-newsletter"
+      >
+        <nuxt-link :to="'/Newsletters/' + id">
+          <div
+            class="card-newsletter-hero"
+            v-bind:style="{
+              backgroundImage: 'url(' + metadata.hero.url + ')',
+            }"
+          ></div>
+          <div class="card-newsletter-body">
+            <div class="card-newsletter-title">
+              <h2>{{ title }}</h2>
+            </div>
+            <div class="card-newsletter-description">
+              <p>{{ metadata.description }}</p>
+            </div>
+            <div class="card-newsletter-date">
+              <p>{{ metadata.date }}</p>
+            </div>
           </div>
-          <div class="card-newsletter-description">
-            <p>{{ metadata.description }}</p>
-          </div>
-          <div class="card-newsletter-date">
-            <p>{{ metadata.date }}</p>
-          </div>
-        </div>
-      </nuxt-link>
+        </nuxt-link>
+      </div>
     </div>
   </main>
 </template>
@@ -49,12 +50,4 @@ export default {
 }
 </script>
 
-<style scoped>
-main {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-</style>
+<style scoped></style>
