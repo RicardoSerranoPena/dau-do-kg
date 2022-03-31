@@ -3,12 +3,6 @@
     <article v-if="content" class="newsletter-article">
       <heading class="newsletter-heading">
         <h1 class="title">{{ title }}</h1>
-        <h3 class="subtitle">
-          {{ metadata.description }}
-        </h3>
-        <div class="newsletter-hero-container">
-          <img :src="metadata.hero.url" alt="" class="newsletter-hero" />
-        </div>
       </heading>
       <div v-html="content" class="newsletter-content"></div>
     </article>
@@ -16,7 +10,7 @@
 </template>
 
 <script>
-import getNewsletter from '~/queries/getNewsletter'
+import getResource from '~/queries/getResource'
 
 export default {
   async asyncData({ app, params, redirect }) {
@@ -24,7 +18,7 @@ export default {
     const { id } = params
     try {
       const res = await client.query({
-        query: getNewsletter,
+        query: getResource,
         variables: {
           bucket_slug: 'dau-do-house-production',
           read_key: 'fk6S5xVNuPsrf3WchtJhjgy2vr6OIxkkpWoWcg1KPbW4xnUh8s',
@@ -32,9 +26,9 @@ export default {
         },
       })
 
-      const newsletter = res.data.getObject
-      console.log('data', newsletter)
-      const { title, content, metadata } = newsletter
+      const resource = res.data.getObject
+      console.log('data', resource)
+      const { title, content, metadata } = resource
 
       return {
         title,

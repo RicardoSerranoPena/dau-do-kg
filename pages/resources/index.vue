@@ -5,26 +5,15 @@
     </header>
     <div class="newsletter-cards">
       <div
-        v-for="{ id, title, metadata } in getObjects.objects"
+        v-for="{ id, title } in getObjects.objects"
         :key="title"
         class="card-newsletter"
       >
-        <nuxt-link :to="'/newsletters/' + id">
-          <div
-            class="card-newsletter-hero"
-            v-bind:style="{
-              backgroundImage: 'url(' + metadata.hero.url + ')',
-            }"
-          ></div>
+        <nuxt-link :to="'/resources/' + id">
+          <div class="card-newsletter-hero"></div>
           <div class="card-newsletter-body">
             <div class="card-newsletter-title">
               <h2>{{ title }}</h2>
-            </div>
-            <div class="card-newsletter-description">
-              <p>{{ metadata.description }}</p>
-            </div>
-            <div class="card-newsletter-date">
-              <p>{{ metadata.date }}</p>
             </div>
           </div>
         </nuxt-link>
@@ -34,13 +23,13 @@
 </template>
 
 <script>
-import getNewsletters from '~/queries/getNewsletters'
+import getResources from '~/queries/getResources'
 
 export default {
   apollo: {
     getObjects: {
       prefetch: true,
-      query: getNewsletters,
+      query: getResources,
       variables: {
         bucket_slug: 'dau-do-house-production',
         read_key: 'fk6S5xVNuPsrf3WchtJhjgy2vr6OIxkkpWoWcg1KPbW4xnUh8s',

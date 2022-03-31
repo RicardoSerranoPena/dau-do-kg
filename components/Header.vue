@@ -21,7 +21,7 @@
           <a href="#">Philosopy</a>
         </li>
         <li>
-          <a href="/Newsletters">Newsletter</a>
+          <nuxt-link to="/newsletters">Newsletter</nuxt-link>
         </li>
         <li>
           <a href="#" class="clr-accent">Apply</a>

@@ -163,31 +163,46 @@
             <div
               class="newsletter-card-img"
               v-bind:style="{
-                backgroundImage: 'url(' + hero.url + ')',
+                backgroundImage: 'url(' + newsletter.heroURL + ')',
               }"
             ></div>
           </div>
           <div class="card-date">
-            <div class="date">{{ date[2] }}/{{ date[1] }}</div>
+            <div class="date">{{ newsletter.date }}</div>
           </div>
           <h3 class="newsletter-card-title">
-            {{ title }}
+            {{ newsletter.title }}
           </h3>
           <div class="newsletter-card-body">
             <p>
-              {{ description }}
+              {{ newsletter.description }}
             </p>
-            <nuxt-link :to="'/Newsletters/' + id">Keep Reading</nuxt-link>
+            <nuxt-link :to="'/newsletters/' + newsletter.id"
+              >Keep Reading</nuxt-link
+            >
           </div>
         </div>
-        <a href="" class="btn btn-primary">Read More News</a>
+        <nuxt-link to="/newsletters" class="btn btn-primary"
+          >Read More News</nuxt-link
+        >
       </div>
       <div class="resources">
         <header>
           <h2 class="section-title">Resources</h2>
         </header>
         <div class="resources-cards">
-          <div class="resources-card">
+          <nuxt-link
+            :to="'/resources/' + id"
+            v-for="{ id, title } in resources"
+            :key="id"
+          >
+            <div class="resources-card">
+              <img src="~/assets/images/document-icon.png" alt="" />
+              <p class="resources-card-title">{{ title }}</p>
+            </div>
+          </nuxt-link>
+
+          <!-- <div class="resources-card">
             <img src="~/assets/images/document-icon.png" alt="" />
             <p class="resources-card-title">Resources on Parenting</p>
           </div>
@@ -198,13 +213,11 @@
           <div class="resources-card">
             <img src="~/assets/images/document-icon.png" alt="" />
             <p class="resources-card-title">Resources on Parenting</p>
-          </div>
-          <div class="resources-card">
-            <img src="~/assets/images/document-icon.png" alt="" />
-            <p class="resources-card-title">Resources on Parenting</p>
-          </div>
+          </div> -->
         </div>
-        <a href="" class="btn btn-secondary">Get More Resources</a>
+        <nuxt-link to="/resources" class="btn btn-secondary"
+          >Get More Resources</nuxt-link
+        >
       </div>
     </section>
     <section class="apply">
@@ -241,12 +254,14 @@
 
 <script>
 import getRecentNewsletter from '~/queries/getRecentNewsletter'
+import getRecentResources from '~/queries/getRecentResources'
 
 export default {
   async asyncData({ app }) {
     const client = app.apolloProvider.defaultClient
     try {
-      const res = await client.query({
+      // getting most recent newsletter
+      const newsletterRes = await client.query({
         query: getRecentNewsletter,
         variables: {
           bucket_slug: 'dau-do-house-production',
@@ -254,35 +269,36 @@ export default {
         },
       })
 
-      const newsletter = res.data.getObjects.objects[0]
-      console.log(newsletter)
-      const { title, metadata, id } = newsletter
-      const { description, hero } = metadata
-      let date = metadata.date
-      date = date.split('-')
-      console.log(date)
-
-      return {
+      const newsletterObj = newsletterRes.data.getObjects.objects[0]
+      const { title, metadata, id } = newsletterObj
+      const date =
+        metadata.date.split('-')[2] + '/' + metadata.date.split('-')[1]
+      const newsletter = {
         title,
         id,
-        description,
-        hero,
         date,
+        description: metadata.description,
+        heroURL: metadata.hero.url,
+      }
+
+      // getting most recent resources
+      const resourcesRes = await client.query({
+        query: getRecentResources,
+        variables: {
+          bucket_slug: 'dau-do-house-production',
+          read_key: 'fk6S5xVNuPsrf3WchtJhjgy2vr6OIxkkpWoWcg1KPbW4xnUh8s',
+        },
+      })
+
+      const resources = resourcesRes.data.getObjects.objects
+
+      return {
+        newsletter,
+        resources,
       }
     } catch (error) {
       console.log('error', error)
     }
-  },
-
-  apollo: {
-    getObjects: {
-      prefetch: true,
-      query: getRecentNewsletter,
-      variables: {
-        bucket_slug: 'dau-do-house-production',
-        read_key: 'fk6S5xVNuPsrf3WchtJhjgy2vr6OIxkkpWoWcg1KPbW4xnUh8s',
-      },
-    },
   },
 }
 </script>
