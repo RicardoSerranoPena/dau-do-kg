@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <article v-if="content" class="newsletter-page">
+  <main class="newsletter-page">
+    <article v-if="content" class="newsletter-article">
       <heading class="newsletter-heading">
         <h1 class="title">{{ title }}</h1>
         <h3 class="subtitle">
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import getObject from '~/queries/getNewsletter'
+import getNewsletter from '~/queries/getNewsletter'
 
 export default {
   async asyncData({ app, params, redirect }) {
@@ -24,7 +24,7 @@ export default {
     const { id } = params
     try {
       const res = await client.query({
-        query: getObject,
+        query: getNewsletter,
         variables: {
           bucket_slug: 'dau-do-house-production',
           read_key: 'fk6S5xVNuPsrf3WchtJhjgy2vr6OIxkkpWoWcg1KPbW4xnUh8s',

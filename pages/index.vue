@@ -160,20 +160,24 @@
         </header>
         <div class="newsletter-card">
           <div class="newsletter-card-img-wrapper">
-            <div class="newsletter-card-img"></div>
+            <div
+              class="newsletter-card-img"
+              v-bind:style="{
+                backgroundImage: 'url(' + hero.url + ')',
+              }"
+            ></div>
           </div>
           <div class="card-date">
-            <div class="date">30<br />T2</div>
+            <div class="date">{{ date[2] }}/{{ date[1] }}</div>
           </div>
-          <h3 class="newsletter-card-title">What's on the board</h3>
+          <h3 class="newsletter-card-title">
+            {{ title }}
+          </h3>
           <div class="newsletter-card-body">
             <p>
-              Cupcake ipsum dolor sit amet carrot cake tiramisu caramels tootsie
-              roll. Chocolate lollipop bonbon pastry jelly wafer lemon drops.
-              Sweet cheesecake cake shortbread gummies jujubes tootsie roll.
-              Bear claw danish sweet roll candy chocolate bar.
+              {{ description }}
             </p>
-            <a href="" class="">Keep Reading</a>
+            <nuxt-link :to="'/Newsletters/' + id">Keep Reading</nuxt-link>
           </div>
         </div>
         <a href="" class="btn btn-primary">Read More News</a>
@@ -236,7 +240,49 @@
 </template>
 
 <script>
+import getRecentNewsletter from '~/queries/getRecentNewsletter'
+
 export default {
-  name: 'IndexPage',
+  async asyncData({ app }) {
+    const client = app.apolloProvider.defaultClient
+    try {
+      const res = await client.query({
+        query: getRecentNewsletter,
+        variables: {
+          bucket_slug: 'dau-do-house-production',
+          read_key: 'fk6S5xVNuPsrf3WchtJhjgy2vr6OIxkkpWoWcg1KPbW4xnUh8s',
+        },
+      })
+
+      const newsletter = res.data.getObjects.objects[0]
+      console.log(newsletter)
+      const { title, metadata, id } = newsletter
+      const { description, hero } = metadata
+      let date = metadata.date
+      date = date.split('-')
+      console.log(date)
+
+      return {
+        title,
+        id,
+        description,
+        hero,
+        date,
+      }
+    } catch (error) {
+      console.log('error', error)
+    }
+  },
+
+  apollo: {
+    getObjects: {
+      prefetch: true,
+      query: getRecentNewsletter,
+      variables: {
+        bucket_slug: 'dau-do-house-production',
+        read_key: 'fk6S5xVNuPsrf3WchtJhjgy2vr6OIxkkpWoWcg1KPbW4xnUh8s',
+      },
+    },
+  },
 }
 </script>

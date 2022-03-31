@@ -657,8 +657,8 @@ form.subscribe #subscribe-button {
 
 .card-date {
   background-color: var(--clr-secondary);
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4rem;
+  height: 3rem;
   border-radius: var(--border-rd-all);
   box-shadow: var(--bx-shadow);
   margin: -2em 2em 0 auto;
@@ -859,6 +859,7 @@ form.subscribe #subscribe-button {
 .card-newsletter {
   display: grid;
   max-width: 45rem;
+  width: 100%;
 
   background-color: var(--clr-secondary);
   border-radius: var(--border-rd-all);
@@ -901,6 +902,7 @@ form.subscribe #subscribe-button {
 .card-newsletter-body {
   grid-area: body;
   padding: 1rem;
+  justify-self: stretch;
 }
 
 .card-newsletter-title h2 {
@@ -925,15 +927,23 @@ form.subscribe #subscribe-button {
   }
 }
 
+/*--------------
+  Newsletter Page 
+  --------------*/
+
 .newsletter-page {
-  max-width: 740px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+
+  max-width: 740px;
+  width: 100%;
   margin: 8rem auto 5rem;
-  padding: 0 1em;
+
   text-rendering: optimizeLegibility;
+}
+
+.newsletter-article {
+  padding: 0 1em;
 }
 
 .newsletter-heading .title {
@@ -951,24 +961,24 @@ form.subscribe #subscribe-button {
 }
 
 .newsletter-hero-container {
-  height: clamp(10rem, 10rem + 15vw, 20rem);
+  /* height: clamp(10rem, 10rem + 15vw, 20rem);
   overflow: hidden;
-  position: relative;
+  position: relative; */
   margin-bottom: 3rem;
+  width: 100%;
+  height: auto;
 }
 
 img.newsletter-hero {
-  /* width: 100%;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%; */
-  position: absolute;
+  /* position: absolute;
   top: -9999px;
   left: -9999px;
   right: -9999px;
   bottom: -9999px;
   margin: auto;
-  overflow: hidden;
+  overflow: hidden; */
+  width: 100%;
+  height: 100%;
 }
 
 .newsletter-content {
