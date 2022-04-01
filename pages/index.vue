@@ -74,7 +74,10 @@
           <a href="" class="btn btn-primary">Learn More</a>
         </div>
         <div class="body-right">
-          <img src="~/assets/images/kids-eating.jpg" />
+          <img
+            class="figure-hover-animation"
+            src="~/assets/images/kids-eating.jpg"
+          />
         </div>
       </div>
     </section>
@@ -158,7 +161,7 @@
         <header>
           <h2 class="section-title">Newsletter</h2>
         </header>
-        <div class="newsletter-card">
+        <div class="newsletter-card hover-animation">
           <div class="newsletter-card-img-wrapper">
             <div
               class="newsletter-card-img"
@@ -193,27 +196,17 @@
         <div class="resources-cards">
           <nuxt-link
             :to="'/resources/' + id"
+            class="resources-card-link resources-card"
             v-for="{ id, title } in resources"
             :key="id"
           >
-            <div class="resources-card">
-              <img src="~/assets/images/document-icon.png" alt="" />
-              <p class="resources-card-title">{{ title }}</p>
-            </div>
+            <img
+              src="~/assets/images/document-icon.png"
+              alt="document icon"
+              class="resources-icon"
+            />
+            <p class="resources-card-title">{{ title }}</p>
           </nuxt-link>
-
-          <!-- <div class="resources-card">
-            <img src="~/assets/images/document-icon.png" alt="" />
-            <p class="resources-card-title">Resources on Parenting</p>
-          </div>
-          <div class="resources-card">
-            <img src="~/assets/images/document-icon.png" alt="" />
-            <p class="resources-card-title">Resources on Parenting</p>
-          </div>
-          <div class="resources-card">
-            <img src="~/assets/images/document-icon.png" alt="" />
-            <p class="resources-card-title">Resources on Parenting</p>
-          </div> -->
         </div>
         <nuxt-link to="/resources" class="btn btn-secondary"
           >Get More Resources</nuxt-link
@@ -221,7 +214,7 @@
       </div>
     </section>
     <section class="apply">
-      <div class="apply-card">
+      <div class="apply-card hover-animation">
         <div class="apply-img-wrapper">
           <div class="apply-img"></div>
         </div>

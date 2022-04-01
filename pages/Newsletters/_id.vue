@@ -1,7 +1,7 @@
 <template>
   <main class="newsletter-page">
     <article v-if="content" class="newsletter-article">
-      <heading class="newsletter-heading">
+      <header class="newsletter-heading">
         <h1 class="title">{{ title }}</h1>
         <h3 class="subtitle">
           {{ metadata.description }}
@@ -9,7 +9,7 @@
         <div class="newsletter-hero-container">
           <img :src="metadata.hero.url" alt="" class="newsletter-hero" />
         </div>
-      </heading>
+      </header>
       <div v-html="content" class="newsletter-content"></div>
     </article>
   </main>

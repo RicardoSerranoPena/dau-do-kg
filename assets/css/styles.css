@@ -32,12 +32,17 @@
   --ff-sans: 'Montserrat', sans-serif;
 
   /* effects */
+  --bx-shadow-hover: 0px 6px 6px 0px rgba(0, 0, 0, 0.3);
   --bx-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --drop-shadow-logo: drop-shadow(10px 10px 10px rgba(71, 71, 71, 0.25));
   --drop-shadow: drop-shadow(10px 10px 10px rgba(71, 71, 71, 0.2));
   --border-rd-btm: 0 0 0.8em 0.8em;
   --border-rd-top: 0.8em 0.8em 0 0;
   --border-rd-all: 0.8em;
+  --transform-hover: translateY(max(-10%, -0.65rem));
+  --transition-hover: 350ms ease;
+  --transform-hover-off: translateY(0%);
+  --transition-hover-off: 200ms ease;
 }
 
 /*--------------
@@ -72,6 +77,10 @@ section {
   margin-bottom: 1em;
 }
 
+.page {
+  margin: 8rem auto 5rem;
+}
+
 .sr-only {
   position: absolute;
   margin: -1px 0 0 -1px;
@@ -85,6 +94,29 @@ section {
   clip: rect(0, 0, 0, 0);
   border: 0;
   outline: 0;
+}
+
+.hover-animation {
+  box-shadow: var(--bx-shadow);
+  transform: var(--transform-hover-off);
+  transition: var(--transition-hover-off);
+}
+
+.hover-animation:hover {
+  box-shadow: var(--bx-shadow-hover);
+  transform: var(--transform-hover);
+  transition: var(--transition-hover);
+}
+
+.figure-hover-animation {
+  transform: var(--transform-hover-off);
+  transition: var(--transition-hover-off);
+}
+
+.figure-hover-animation:hover {
+  box-shadow: var(--bx-shadow-hover);
+  transform: var(--transform-hover);
+  transition: var(--transition-hover);
 }
 
 /* Typography */
@@ -118,13 +150,23 @@ p {
 /* Buttons */
 .btn {
   display: table;
-  text-decoration: none;
-  border-radius: var(--border-rd-all);
-  box-shadow: var(--bx-shadow);
   padding: 0.6em 0.8em 0.5em;
   margin: 1em 0;
+
+  text-decoration: none;
   font-weight: 300;
   text-decoration: none;
+
+  border-radius: var(--border-rd-all);
+  box-shadow: var(--bx-shadow);
+  transform: var(--transform-hover-off);
+  transition: var(--transition-hover-off);
+}
+
+.btn:hover {
+  box-shadow: var(--bx-shadow-hover);
+  transform: var(--transform-hover);
+  transition: var(--transition-hover);
 }
 
 .btn-primary {
@@ -139,6 +181,14 @@ p {
 
 .btn-form {
   font-weight: 400;
+  cursor: pointer;
+  transition: background-color 300ms ease;
+}
+
+.btn-form:hover {
+  background-color: var(--clr-accent);
+  color: var(--clr-text-light);
+  transition: background-color 300ms ease, color 350ms ease;
 }
 
 /* Forms */
@@ -326,6 +376,14 @@ footer {
   max-width: 12rem;
   margin: 0 auto;
   filter: var(--drop-shadow-logo);
+  transform: var(--transform-hover-off);
+  transition: var(--transition-hover-off);
+}
+
+.footer-logo:hover,
+.footer-logo-full:hover {
+  transform: var(--transform-hover);
+  transition: var(--transition-hover);
 }
 
 .footer-contact-us img {
@@ -458,11 +516,21 @@ form.subscribe #subscribe-button {
 .card {
   display: flex;
   flex-direction: column;
+
+  text-align: center;
+
   width: 17rem;
   margin: 0 0.25em 1em;
   border-radius: var(--border-rd-all);
   box-shadow: var(--bx-shadow);
-  text-align: center;
+  transform: var(--transform-hover-off);
+  transition: var(--transition-hover-off);
+}
+
+.card:hover {
+  box-shadow: var(--bx-shadow-hover);
+  transform: var(--transform-hover);
+  transition: var(--transition-hover);
 }
 
 .highlights .card {
@@ -541,6 +609,13 @@ form.subscribe #subscribe-button {
   -webkit-filter: var(--drop-shadow);
   filter: var(--drop-shadow);
   margin: 0 auto;
+  transform: var(--transform-hover-off);
+  transition: var(--transition-hover-off);
+}
+
+.our-philosophy img:hover {
+  transform: var(--transform-hover);
+  transition: var(--transition-hover);
 }
 
 .testimonials {
@@ -612,7 +687,7 @@ form.subscribe #subscribe-button {
   border-radius: var(--border-rd-all);
   box-shadow: var(--bx-shadow);
   margin-top: -2em;
-  padding: 2em 1em;
+  padding: 2em clamp(1em, 1em + 2vw, 3em);
   z-index: 50;
   display: flex;
   flex-direction: column;
@@ -636,7 +711,7 @@ form.subscribe #subscribe-button {
   background-color: var(--clr-tertiary);
   border-radius: var(--border-rd-all);
   box-shadow: var(--bx-shadow);
-  max-width: 25rem;
+  max-width: min(100%, 25rem);
 }
 
 .newsletter-card-img-wrapper {
@@ -648,6 +723,7 @@ form.subscribe #subscribe-button {
 .newsletter-card-img {
   width: 100%;
   height: 100%;
+  max-width: 100%;
   background-image: url(~/assets/images/news1.jpg);
   background-color: var(--clr-secondary);
   background-size: 25rem;
@@ -689,18 +765,46 @@ form.subscribe #subscribe-button {
   display: block;
 }
 
+.newsletter-card-body a:hover {
+  color: var(--clr-secondary);
+}
+
 .resources-cards {
   display: grid;
-  gap: 1em;
+  gap: clamp(1rem, 1rem + 1vw, 2rem);
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .resources-card {
+  width: clamp(5rem, 6rem + 10vw, 15rem);
+  max-width: min(100%, 25rem);
   background-color: var(--clr-secondary);
   border-radius: var(--border-rd-all);
   box-shadow: var(--bx-shadow);
-  color: var(--clr-text-light);
+  transform: var(--transform-hover-off);
+  transition: var(--transition-hover-off);
+}
+
+.resources-card:hover {
+  box-shadow: var(--bx-shadow-hover);
+  transform: var(--transform-hover);
+  transition: var(--transition-hover);
+}
+
+.resources-card-link {
   text-align: center;
+  text-decoration: none;
+  color: var(--clr-text-light);
+}
+
+.resources-card-title {
+  padding-inline: clamp(0.5em, 1vw, 1em);
+}
+
+.resources-icon {
+  margin: 0 auto;
+  max-width: min(100%, 10rem);
 }
 
 .apply {
@@ -844,10 +948,6 @@ form.subscribe #subscribe-button {
   Newsletters Page 
   --------------*/
 
-.newsletters-page {
-  padding-top: 7rem;
-}
-
 .newsletter-cards {
   display: flex;
   flex-direction: column;
@@ -864,14 +964,14 @@ form.subscribe #subscribe-button {
   background-color: var(--clr-secondary);
   border-radius: var(--border-rd-all);
   box-shadow: var(--bx-shadow);
-  transform: translateY(0%);
-  transition: 200ms ease;
+  transform: var(--transform-hover-off);
+  transition: var(--transition-hover-off);
 }
 
 .card-newsletter:hover {
-  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.3);
-  transform: translateY(-5%);
-  transition: 350ms ease;
+  box-shadow: var(--bx-shadow-hover);
+  transform: var(--transform-hover);
+  transition: var(--transition-hover);
 }
 
 .card-newsletter a:focus {
@@ -937,7 +1037,6 @@ form.subscribe #subscribe-button {
 
   max-width: 740px;
   width: 100%;
-  margin: 8rem auto 5rem;
 
   text-rendering: optimizeLegibility;
 }
@@ -987,4 +1086,23 @@ img.newsletter-hero {
 
 .newsletter-content iframe {
   max-width: 100%;
+}
+
+/*--------------
+  Resources Page 
+  --------------*/
+.resources-page {
+  padding-inline: clamp(0.5rem, 0.5rem + 4.5vw, 5rem);
+}
+
+@media only screen and (min-width: 650px) {
+  .resources-page .resources-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .resources-page .resources-cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

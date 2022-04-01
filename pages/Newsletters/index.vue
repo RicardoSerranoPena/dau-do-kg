@@ -1,5 +1,5 @@
 <template>
-  <main class="newsletters-page">
+  <main class="newsletters-page page">
     <header class="section-title">
       <h1>Newsletters</h1>
     </header>

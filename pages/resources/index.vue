@@ -1,23 +1,22 @@
 <template>
-  <main class="newsletters-page">
+  <main class="resources-page page">
     <header class="section-title">
-      <h1>Newsletters</h1>
+      <h1>Resources</h1>
     </header>
-    <div class="newsletter-cards">
-      <div
+    <div class="resources-cards">
+      <nuxt-link
+        :to="'/resources/' + id"
         v-for="{ id, title } in getObjects.objects"
-        :key="title"
-        class="card-newsletter"
+        :key="id"
+        class="resources-card-link resources-card"
       >
-        <nuxt-link :to="'/resources/' + id">
-          <div class="card-newsletter-hero"></div>
-          <div class="card-newsletter-body">
-            <div class="card-newsletter-title">
-              <h2>{{ title }}</h2>
-            </div>
-          </div>
-        </nuxt-link>
-      </div>
+        <img
+          src="~/assets/images/document-icon.png"
+          alt="document icon"
+          class="resources-icon"
+        />
+        <p class="resources-card-title">{{ title }}</p>
+      </nuxt-link>
     </div>
   </main>
 </template>

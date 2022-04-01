@@ -1,9 +1,9 @@
 <template>
   <main class="newsletter-page">
     <article v-if="content" class="newsletter-article">
-      <heading class="newsletter-heading">
+      <header class="newsletter-heading">
         <h1 class="title">{{ title }}</h1>
-      </heading>
+      </header>
       <div v-html="content" class="newsletter-content"></div>
     </article>
   </main>
