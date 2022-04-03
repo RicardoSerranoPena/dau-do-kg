@@ -1,9 +1,9 @@
 <template>
-  <main class="newsletter-page">
+  <main class="newsletter-page page">
     <article v-if="content" class="newsletter-article">
-      <header class="newsletter-heading">
-        <h1 class="title">{{ title }}</h1>
-        <h3 class="subtitle">
+      <header>
+        <h1 class="newsletter-header-title">{{ title }}</h1>
+        <h3 class="newsletter-header-subtitle">
           {{ metadata.description }}
         </h3>
         <div class="newsletter-hero-container">

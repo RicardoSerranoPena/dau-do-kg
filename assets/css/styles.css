@@ -1028,30 +1028,35 @@ form.subscribe #subscribe-button {
 }
 
 /*--------------
-  Newsletter Page 
+  Newsletter Page
+  Resource Page 
   --------------*/
 
-.newsletter-page {
+.newsletter-page,
+.resource-page {
   display: flex;
   justify-content: center;
 
-  max-width: 740px;
   width: 100%;
+  max-width: 740px;
+  min-height: 50vh;
 
   text-rendering: optimizeLegibility;
 }
 
-.newsletter-article {
+.newsletter-article,
+.resource-article {
   padding: 0 1em;
 }
 
-.newsletter-heading .title {
+.newsletter-header-title,
+.resource-header-title {
   font-size: 1.6rem;
   font-size: clamp(1.6rem, 1.35rem + 0.75vw, 2.25rem);
   margin-bottom: 0.5rem;
 }
 
-.newsletter-heading .subtitle {
+.newsletter-header-subtitle {
   font-size: 1.2rem;
   font-size: clamp(1.2rem, 1.02rem + 0.3999999999999999vw, 1.5rem);
   font-weight: 500;
@@ -1080,11 +1085,13 @@ img.newsletter-hero {
   height: 100%;
 }
 
-.newsletter-content {
+.newsletter-content,
+.resource-content {
   max-width: 100%;
 }
 
-.newsletter-content iframe {
+.newsletter-content iframe,
+.resource-content iframe {
   max-width: 100%;
 }
 
@@ -1092,7 +1099,7 @@ img.newsletter-hero {
   Resources Page 
   --------------*/
 .resources-page {
-  padding-inline: clamp(0.5rem, 0.5rem + 4.5vw, 5rem);
+  padding-inline: clamp(0.5rem, 0.25rem + 4.5vw, 5rem);
 }
 
 @media only screen and (min-width: 650px) {

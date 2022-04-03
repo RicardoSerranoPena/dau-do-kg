@@ -1,10 +1,10 @@
 <template>
-  <main class="newsletter-page">
-    <article v-if="content" class="newsletter-article">
-      <header class="newsletter-heading">
-        <h1 class="title">{{ title }}</h1>
+  <main class="resource-page page">
+    <article v-if="content" class="resource-article">
+      <header>
+        <h1 class="resource-header-title">{{ title }}</h1>
       </header>
-      <div v-html="content" class="newsletter-content"></div>
+      <div v-html="content" class="resource-content"></div>
     </article>
   </main>
 </template>
