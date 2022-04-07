@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <Contact />
     <Nuxt />
     <Footer />
   </div>
