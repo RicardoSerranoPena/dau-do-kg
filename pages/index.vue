@@ -213,7 +213,7 @@
         >
       </div>
     </section>
-    <section class="apply">
+    <section id="apply" class="apply">
       <div class="apply-card hover-animation">
         <div class="apply-img-wrapper">
           <div class="apply-img"></div>

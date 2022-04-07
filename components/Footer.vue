@@ -16,6 +16,20 @@
         <img src="~/assets/images/map-marker-solid.svg" />
         <p>Street Name 123 - New York Elevent</p>
       </div>
+      <div class="social-media">
+        <a href="https://zalo.com"
+          ><img
+            src="~/assets/images/zalo-logo.png"
+            alt="zalo logo"
+            class="hover-animation"
+        /></a>
+        <a href="https://facebook.com"
+          ><img
+            src="~/assets/images/fb-logo.png"
+            alt="facebook logo"
+            class="hover-animation"
+        /></a>
+      </div>
     </div>
     <div class="footer-working-hours">
       <h4 class="title">Working Hours</h4>
