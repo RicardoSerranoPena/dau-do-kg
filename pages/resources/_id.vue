@@ -27,7 +27,6 @@ export default {
       })
 
       const resource = res.data.getObject
-      console.log('data', resource)
       const { title, content, metadata } = resource
 
       return {

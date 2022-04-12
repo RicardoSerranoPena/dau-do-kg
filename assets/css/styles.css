@@ -11,7 +11,12 @@
     2.3 Forms
   3. Navigation
   4. Footer
-  5. Home Page 
+  5. Home Page
+  6. Newsletters Page
+  7. Newsletter Page & Resource Page
+  8. Resources Page
+  9. Form Success Page 
+
 
 --------------*/
 
@@ -76,6 +81,10 @@ img {
 section {
   padding: 1em;
   margin-bottom: 1em;
+}
+
+.hidden {
+  display: none;
 }
 
 .page {
@@ -1095,10 +1104,9 @@ form.subscribe #subscribe-button {
   }
 }
 
-/*--------------
-  Newsletter Page
-  Resource Page 
-  --------------*/
+/*--------------------------------
+  Newsletter Page & Resource Page 
+  -------------------------------*/
 
 .newsletter-page,
 .resource-page {
@@ -1179,4 +1187,14 @@ img.newsletter-hero {
   .resources-page .resources-cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+/*--------------
+  Form Success Page 
+  --------------*/
+.success-message {
+  max-width: 40rem;
+  margin: 0 auto;
+
+  font-size: 1.3rem;
 }

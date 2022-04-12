@@ -24,7 +24,7 @@
           <nuxt-link to="/newsletters">Newsletter</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="#apply" class="clr-accent">Apply</nuxt-link>
+          <nuxt-link to="/#apply" class="clr-accent">Apply</nuxt-link>
         </li>
       </ul>
     </nav>
