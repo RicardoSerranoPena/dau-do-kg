@@ -3,14 +3,24 @@
     <div class="success-message">
       <p>
         Form was successly submited. Wait for an email in your inbox at:
-        madeup@email.com
+        {{ email }}
       </p>
     </div>
   </main>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      email: '',
+    }
+  },
+  created() {
+    console.log(this.$route.query.email)
+    this.email = this.$route.query.email
+  },
+}
 </script>
 
 <style></style>

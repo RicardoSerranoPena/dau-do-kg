@@ -225,14 +225,14 @@
           <form
             netlify
             name="apply-form"
-            action="/apply/success"
-            method="POST"
-            netlify-honeypot="b0ts-not-allowed"
+            method="post"
+            netlify-honeypot="bot-field"
+            @submit.prevent="submitForm"
           >
             <p class="hidden">
               <label>
                 Don't fill this out if you're a human:
-                <input name="b0ts-not-allowed" />
+                <input name="bot-field" />
               </label>
             </p>
             <div class="form-group">
@@ -240,6 +240,7 @@
               <input
                 type="text"
                 id="first-name"
+                v-model="form.firstName"
                 placeholder="First Name"
                 oninvalid="this.setCustomValidity('Please enter your name')"
                 oninput="setCustomValidity('')"
@@ -250,6 +251,7 @@
               <input
                 type="text"
                 id="last-name"
+                v-model="form.lastName"
                 placeholder="Last Name"
                 oninvalid="this.setCustomValidity('Please enter your last name')"
                 oninput="setCustomValidity('')"
@@ -261,6 +263,7 @@
             <input
               type="email"
               id="email"
+              v-model="form.email"
               placeholder="Email Address"
               oninvalid="this.setCustomValidity('Please enter your email address')"
               oninput="setCustomValidity('')"
@@ -271,6 +274,7 @@
             <input
               type="tel"
               id="phone"
+              v-model="form.phone"
               placeholder="Phone Number"
               oninvalid="this.setCustomValidity('Please enter your phone number')"
               oninput="setCustomValidity('')"
@@ -295,6 +299,16 @@ import getRecentNewsletter from '~/queries/getRecentNewsletter'
 import getRecentResources from '~/queries/getRecentResources'
 
 export default {
+  data() {
+    return {
+      form: {
+        firtName: '',
+        lastName: '',
+        phone: '',
+        email: '',
+      },
+    }
+  },
   async asyncData({ app }) {
     const client = app.apolloProvider.defaultClient
     try {
@@ -337,6 +351,40 @@ export default {
     } catch (error) {
       console.log('error', error)
     }
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
+    submitForm() {
+      if (
+        this.form.firstName &&
+        this.form.lastName &&
+        this.form.phone &&
+        this.form.email
+      ) {
+        const axiosConfig = {
+          header: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        }
+        this.$axios.$post(
+          '/',
+          this.encode({
+            'form-name': 'apply-form',
+            ...this.form,
+          }),
+          axiosConfig
+        )
+      }
+
+      this.$router.push({
+        path: '/apply/success',
+        query: { email: this.form.email },
+      })
+    },
   },
 }
 </script>
