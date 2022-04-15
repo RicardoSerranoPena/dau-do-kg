@@ -240,6 +240,7 @@
               <input
                 type="text"
                 id="first-name"
+                name="first-name"
                 v-model="form.firstName"
                 placeholder="First Name"
                 oninvalid="this.setCustomValidity('Please enter your name')"
@@ -251,6 +252,7 @@
               <input
                 type="text"
                 id="last-name"
+                name="last-name"
                 v-model="form.lastName"
                 placeholder="Last Name"
                 oninvalid="this.setCustomValidity('Please enter your last name')"
@@ -263,6 +265,7 @@
             <input
               type="email"
               id="email"
+              name="email"
               v-model="form.email"
               placeholder="Email Address"
               oninvalid="this.setCustomValidity('Please enter your email address')"
@@ -274,6 +277,7 @@
             <input
               type="tel"
               id="phone"
+              name="phone"
               v-model="form.phone"
               placeholder="Phone Number"
               oninvalid="this.setCustomValidity('Please enter your phone number')"
