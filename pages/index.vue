@@ -227,7 +227,7 @@
             name="apply-form"
             method="post"
             netlify-honeypot="bot-field"
-            @submit.prevent="submitForm"
+            action="/apply/success"
           >
             <p class="hidden">
               <label>
@@ -306,7 +306,7 @@ export default {
   data() {
     return {
       form: {
-        firtName: '',
+        firstName: '',
         lastName: '',
         phone: '',
         email: '',
