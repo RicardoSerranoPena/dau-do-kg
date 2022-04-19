@@ -224,8 +224,8 @@
           </header>
           <form
             netlify
-            name="apply-form"
-            method="post"
+            name="Apply"
+            method="POST"
             netlify-honeypot="bot-field"
             action="/apply/success"
           >
@@ -290,7 +290,7 @@
               value="Enroll"
               class="btn-form btn-secondary"
             />
-            <input type="hidden" name="form-name" value="apply-form" />
+            <input type="hidden" name="form-name" value="Apply" />
           </form>
         </div>
       </div>
