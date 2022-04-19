@@ -356,39 +356,6 @@ export default {
       console.log('error', error)
     }
   },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join('&')
-    },
-    submitForm() {
-      if (
-        this.form.firstName &&
-        this.form.lastName &&
-        this.form.phone &&
-        this.form.email
-      ) {
-        const axiosConfig = {
-          header: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        }
-        this.$axios.$post(
-          '/',
-          this.encode({
-            'form-name': 'apply-form',
-            ...this.form,
-          }),
-          axiosConfig
-        )
-      }
-
-      this.$router.push({
-        path: '/apply/success',
-        query: { email: this.form.email },
-      })
-    },
-  },
+  methods: {},
 }
 </script>

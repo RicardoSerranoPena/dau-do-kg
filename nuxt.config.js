@@ -128,7 +128,7 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/apollo', '@nuxtjs/axios'],
+  modules: ['@nuxtjs/apollo'],
 
   // Apollo config
   apollo: {
