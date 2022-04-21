@@ -197,7 +197,7 @@
           <nuxt-link
             :to="'/resources/' + id"
             class="resources-card-link resources-card"
-            v-for="{ id, title } in resources"
+            v-for="{ id, title, metadata } in resources"
             :key="id"
           >
             <img
@@ -206,6 +206,11 @@
               class="resources-icon"
             />
             <p class="resources-card-title">{{ title }}</p>
+            <div class="tags">
+              <div class="tag" v-for="type in metadata.type" :key="type">
+                {{ type }}
+              </div>
+            </div>
           </nuxt-link>
         </div>
         <nuxt-link to="/resources" class="btn btn-secondary"
@@ -241,7 +246,6 @@
                 type="text"
                 id="first-name"
                 name="first-name"
-                v-model="form.firstName"
                 placeholder="First Name"
                 oninvalid="this.setCustomValidity('Please enter your name')"
                 oninput="setCustomValidity('')"
@@ -253,7 +257,6 @@
                 type="text"
                 id="last-name"
                 name="last-name"
-                v-model="form.lastName"
                 placeholder="Last Name"
                 oninvalid="this.setCustomValidity('Please enter your last name')"
                 oninput="setCustomValidity('')"
@@ -266,7 +269,6 @@
               type="email"
               id="email"
               name="email"
-              v-model="form.email"
               placeholder="Email Address"
               oninvalid="this.setCustomValidity('Please enter your email address')"
               oninput="setCustomValidity('')"
@@ -278,7 +280,6 @@
               type="tel"
               id="phone"
               name="phone"
-              v-model="form.phone"
               placeholder="Phone Number"
               oninvalid="this.setCustomValidity('Please enter your phone number')"
               oninput="setCustomValidity('')"
@@ -304,14 +305,7 @@ import getRecentResources from '~/queries/getRecentResources'
 
 export default {
   data() {
-    return {
-      form: {
-        firstName: '',
-        lastName: '',
-        phone: '',
-        email: '',
-      },
-    }
+    return {}
   },
   async asyncData({ app }) {
     const client = app.apolloProvider.defaultClient
@@ -347,7 +341,6 @@ export default {
       })
 
       const resources = resourcesRes.data.getObjects.objects
-
       return {
         newsletter,
         resources,
