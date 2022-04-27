@@ -6,16 +6,16 @@ export default {
   head: {
     title: 'Đậu Đỗ House Kindergarten',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'vi',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone:no' },
-      { name: 'msapplication-TileColor', content: '#ffffff' },
+      { name: 'format-detection', content: 'telephone:yes' },
+      { name: 'msapplication-TileColor', content: '#fffced' },
       { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
-      { name: 'theme-color', content: '#ffffff' },
+      { name: 'theme-color', content: '#fffced' },
     ],
     link: [
       {

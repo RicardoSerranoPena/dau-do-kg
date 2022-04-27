@@ -288,7 +288,7 @@ input {
     font-size: larger;
 
     position: fixed;
-    inset: 0 0 40% 0;
+    inset: 0 0 33% 0;
     z-index: 500;
 
     flex-direction: column;
@@ -853,13 +853,14 @@ form.subscribe #subscribe-button {
   gap: clamp(1rem, 1rem + 1vw, 2rem);
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  width: 100%;
 }
 
 .resources-card {
   display: flex;
   flex-direction: column;
-  width: clamp(5rem, 6rem + 10vw, 15rem);
-  max-width: min(100%, 25rem);
+  width: 100%;
+  max-width: min(100%, 15rem);
   background-color: var(--clr-secondary);
   border-radius: var(--border-rd-all);
   box-shadow: var(--bx-shadow);
@@ -892,15 +893,17 @@ form.subscribe #subscribe-button {
   display: flex;
   gap: 1rem;
   justify-content: center;
+
+  margin: auto 0.5rem 0.5rem;
+
   font-size: 0.75rem;
-  margin-bottom: 0.5rem;
-  margin-top: auto;
 }
 
 .tag {
+  padding: 0.2em 0.5em;
+
   background-color: var(--clr-primary);
   color: var(--clr-text-dark);
-  padding: 0.2em 0.5em;
   border-radius: var(--border-rd-all);
 }
 
