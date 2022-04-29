@@ -33,8 +33,16 @@ export default {
           'Trường mầm non thuần chay đầu tiên tại Hà Nội, với đội ngũ giáo viên đầu tiên tràn đầy tình yêu thương dành cho các bé.',
       },
       { hid: 'og:site_name', name: 'og:site_name', content: 'Đậu Đỗ House' },
-      { hid: 'og:image:alt', name: 'og:image:alt', content: '' },
-      { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: '' },
+      {
+        hid: 'og:image:alt',
+        name: 'og:image:alt',
+        content: 'Trẻ em chơi trong nhà trẻ',
+      },
+      {
+        hid: 'twitter:image:alt',
+        name: 'twitter:image:alt',
+        content: 'Trẻ em chơi trong nhà trẻ',
+      },
 
       { name: 'format-detection', content: 'telephone:yes' },
       { name: 'msapplication-TileColor', content: '#fffced' },
@@ -152,7 +160,7 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/apollo'],
+  modules: ['@nuxtjs/apollo', '@nuxtjs/robots', '@nuxtjs/sitemap'],
 
   // Apollo config
   apollo: {
@@ -163,9 +171,15 @@ export default {
     },
   },
 
+  // Sitemap config
+  sitemap: {
+    hostname: 'https://daudohouse.com',
+    gzip: true,
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-  server: {
-    host: '0.0.0.0',
-  },
+  // server: {
+  //   host: '0.0.0.0',
+  // },
 }
