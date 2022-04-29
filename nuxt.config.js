@@ -4,14 +4,38 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Đậu Đỗ House Kindergarten',
+    title: 'Đậu Đỗ House',
     htmlAttrs: {
       lang: 'vi',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-      { hid: 'description', name: 'description', content: '' },
+
+      { hid: 'og:title', name: 'og:title', content: 'Đậu Đỗ House' },
+      { hid: 'og:type', name: 'og:type', content: 'website' },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: 'https://daudohouse.com/thumbnail.jpg',
+      },
+      { hid: 'og:url', name: 'og:url', content: 'https://daudohouse.com' },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content:
+          'Trường mầm non thuần chay đầu tiên tại Hà Nội, với đội ngũ giáo viên đầu tiên tràn đầy tình yêu thương dành cho các bé.',
+      },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'Đậu Đỗ House' },
+      { hid: 'og:image:alt', name: 'og:image:alt', content: '' },
+      { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: '' },
+
       { name: 'format-detection', content: 'telephone:yes' },
       { name: 'msapplication-TileColor', content: '#fffced' },
       { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },

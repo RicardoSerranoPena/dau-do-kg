@@ -33,9 +33,7 @@ export default {
       })
 
       const newsletter = res.data.getObject
-      console.log('data', newsletter)
       const { title, content, metadata } = newsletter
-
       return {
         title,
         content,
@@ -44,6 +42,39 @@ export default {
     } catch (error) {
       console.log('error', error)
       redirect('/newsletters')
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      description: this.metadata.description,
+      meta: [
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.title,
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: this.metadata.hero.url,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.metadata.description,
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: `https://daudohouse.com${this.$nuxt.$route.path}`,
+        },
+        {
+          hid: 'og:type',
+          name: 'og:type',
+          content: 'article',
+        },
+      ],
     }
   },
 }

@@ -39,6 +39,34 @@ export default {
       redirect('/newsletters')
     }
   },
+  head() {
+    return {
+      title: this.title,
+      description: this.metadata.description,
+      meta: [
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.title,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.metadata.description,
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: `https://daudohouse.com${this.$nuxt.$route.path}`,
+        },
+        {
+          hid: 'og:type',
+          name: 'og:type',
+          content: 'article',
+        },
+      ],
+    }
+  },
 }
 </script>
 
