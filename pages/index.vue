@@ -195,9 +195,9 @@
         </header>
         <div class="resources-cards">
           <nuxt-link
-            :to="'/resources/' + id"
+            :to="'/resources/' + slug"
             class="resources-card-link resources-card"
-            v-for="{ id, title, metadata } in resources"
+            v-for="{ id, title, slug, metadata } in resources"
             :key="id"
           >
             <img

@@ -22,21 +22,22 @@ export default {
         variables: {
           bucket_slug: 'dau-do-house-production',
           read_key: 'fk6S5xVNuPsrf3WchtJhjgy2vr6OIxkkpWoWcg1KPbW4xnUh8s',
-          object_id: id,
+          slug: id,
         },
       })
 
-      const resource = res.data.getObject
-      const { title, content, metadata } = resource
+      const resource = res.data.getObjects.objects[0]
+      const { title, slug, content, metadata } = resource
 
       return {
         title,
+        slug,
         content,
         metadata,
       }
     } catch (error) {
       console.log('error', error)
-      redirect('/newsletters')
+      redirect('/resources')
     }
   },
   head() {
@@ -57,7 +58,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: `https://daudohouse.com${this.$nuxt.$route.path}`,
+          content: `https://daudohouse.com/resources/${this.slug}`,
         },
         {
           hid: 'og:type',

@@ -5,8 +5,9 @@ query ($bucket_slug: String!, $read_key: String!) {
     input: { limit: 4, query: { type: "resources" } }
   ) {
     objects {
-      title
       id
+      title
+      slug
       metadata
     }
   }

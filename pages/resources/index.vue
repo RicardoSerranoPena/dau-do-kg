@@ -68,8 +68,8 @@
     </div>
     <div class="resources-cards" v-else>
       <nuxt-link
-        :to="'/resources/' + id"
-        v-for="{ id, title, metadata } in resources"
+        :to="'/resources/' + slug"
+        v-for="{ id, title, slug, metadata } in resources"
         :key="id"
         class="resources-card-link resources-card"
       >
