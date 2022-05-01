@@ -180,7 +180,7 @@
             <p>
               {{ newsletter.description }}
             </p>
-            <nuxt-link :to="'/newsletters/' + newsletter.id"
+            <nuxt-link :to="'/newsletters/' + newsletter.slug"
               >Keep Reading</nuxt-link
             >
           </div>
@@ -320,11 +320,12 @@ export default {
       })
 
       const newsletterObj = newsletterRes.data.getObjects.objects[0]
-      const { title, metadata, id } = newsletterObj
+      const { title, slug, metadata, id } = newsletterObj
       const date =
         metadata.date.split('-')[2] + '/' + metadata.date.split('-')[1]
       const newsletter = {
         title,
+        slug,
         id,
         date,
         description: metadata.description,

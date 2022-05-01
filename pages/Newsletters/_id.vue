@@ -22,20 +22,21 @@ export default {
   async asyncData({ app, params, redirect }) {
     const client = app.apolloProvider.defaultClient
     const { id } = params
+
     try {
       const res = await client.query({
         query: getNewsletter,
         variables: {
           bucket_slug: 'dau-do-house-production',
           read_key: 'fk6S5xVNuPsrf3WchtJhjgy2vr6OIxkkpWoWcg1KPbW4xnUh8s',
-          object_id: id,
+          slug: id,
         },
       })
-
-      const newsletter = res.data.getObject
-      const { title, content, metadata } = newsletter
+      const newsletter = res.data.getObjects.objects[0]
+      const { title, slug, content, metadata } = newsletter
       return {
         title,
+        slug,
         content,
         metadata,
       }
@@ -67,7 +68,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: `https://daudohouse.com${this.$nuxt.$route.path}`,
+          content: `https://daudohouse.com/newsletters/${this.slug}`,
         },
         {
           hid: 'og:type',

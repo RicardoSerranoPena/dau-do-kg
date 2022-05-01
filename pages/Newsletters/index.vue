@@ -5,11 +5,11 @@
     </header>
     <div class="newsletter-cards">
       <div
-        v-for="{ id, title, metadata } in getObjects.objects"
+        v-for="{ slug, title, metadata } in getObjects.objects"
         :key="title"
         class="card-newsletter"
       >
-        <nuxt-link :to="'/newsletters/' + id">
+        <nuxt-link :to="'/newsletters/' + slug">
           <div
             class="card-newsletter-hero"
             v-bind:style="{
