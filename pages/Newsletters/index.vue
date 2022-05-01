@@ -37,6 +37,16 @@
 import getNewsletters from '~/queries/getNewsletters'
 
 export default {
+  apollo: {
+    getObjects: {
+      prefetch: true,
+      query: getNewsletters,
+      variables: {
+        bucket_slug: 'dau-do-house-production',
+        read_key: 'fk6S5xVNuPsrf3WchtJhjgy2vr6OIxkkpWoWcg1KPbW4xnUh8s',
+      },
+    },
+  },
   data() {
     return {
       title: 'Đậu Đỗ House - Tin Tức',
@@ -65,16 +75,6 @@ export default {
         },
       ],
     }
-  },
-  apollo: {
-    getObjects: {
-      prefetch: true,
-      query: getNewsletters,
-      variables: {
-        bucket_slug: 'dau-do-house-production',
-        read_key: 'fk6S5xVNuPsrf3WchtJhjgy2vr6OIxkkpWoWcg1KPbW4xnUh8s',
-      },
-    },
   },
 }
 </script>
