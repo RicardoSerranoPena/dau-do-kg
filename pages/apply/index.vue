@@ -82,7 +82,37 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      title: 'Đậu Đỗ House - Ghi Danh',
+      description: 'Đăng ký ghi danh vào Đậu Đỗ House mẫu giáo',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      description: this.description,
+      meta: [
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.title,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.description,
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: `https://daudohouse.com/apply`,
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style></style>

@@ -37,6 +37,35 @@
 import getNewsletters from '~/queries/getNewsletters'
 
 export default {
+  data() {
+    return {
+      title: 'Đậu Đỗ House - Tin Tức',
+      description: 'Đọc tất cả các bản tin tức đây từ Đậu Đỗ House',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      description: this.description,
+      meta: [
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.title,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.description,
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: `https://daudohouse.com/newsletters`,
+        },
+      ],
+    }
+  },
   apollo: {
     getObjects: {
       prefetch: true,
