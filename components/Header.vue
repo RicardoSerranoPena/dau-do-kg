@@ -2,7 +2,10 @@
   <header class="nav-header">
     <h1 hidden>ĐẬU ĐỖ HOUSE</h1>
     <nuxt-link to="/"
-      ><img class="logo" src="~/assets/images/Title-logo.png"
+      ><img
+        class="logo"
+        src="~/assets/images/Title-logo.png"
+        alt="ĐẬU ĐỖ HOUSE"
     /></nuxt-link>
     <button
       class="mobile-nav-toggle"
@@ -21,7 +24,7 @@
           <a href="#">Philosopy</a>
         </li>
         <li>
-          <nuxt-link to="/newsletters">Newsletter</nuxt-link>
+          <nuxt-link to="/tin-tuc">Tin Tức</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/#apply" class="clr-accent">Apply</nuxt-link>

@@ -180,12 +180,12 @@
             <p>
               {{ newsletter.description }}
             </p>
-            <nuxt-link :to="'/newsletters/' + newsletter.slug"
+            <nuxt-link :to="'/tin-tuc/' + newsletter.slug"
               >Keep Reading</nuxt-link
             >
           </div>
         </div>
-        <nuxt-link to="/newsletters" class="btn btn-primary"
+        <nuxt-link to="/tin-tuc" class="btn btn-primary"
           >Read More News</nuxt-link
         >
       </div>

@@ -42,7 +42,7 @@ export default {
       }
     } catch (error) {
       console.log('error', error)
-      redirect('/newsletters')
+      redirect('/tin-tuc')
     }
   },
   head() {
@@ -68,7 +68,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: `https://daudohouse.com/newsletters/${this.slug}`,
+          content: `https://daudohouse.com/tin-tuc/${this.slug}`,
         },
         {
           hid: 'og:type',

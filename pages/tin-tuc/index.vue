@@ -9,7 +9,7 @@
         :key="title"
         class="card-newsletter"
       >
-        <nuxt-link :to="'/newsletters/' + slug">
+        <nuxt-link :to="'/tin-tuc/' + slug">
           <div
             class="card-newsletter-hero"
             v-bind:style="{
@@ -71,7 +71,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: `https://daudohouse.com/newsletters`,
+          content: `https://daudohouse.com/tin-tuc`,
         },
       ],
     }
