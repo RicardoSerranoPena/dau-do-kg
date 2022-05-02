@@ -195,7 +195,7 @@
         </header>
         <div class="resources-cards">
           <nuxt-link
-            :to="'/resources/' + slug"
+            :to="'/tai-lieu-tham-khao/' + slug"
             class="resources-card-link resources-card"
             v-for="{ id, title, slug, metadata } in resources"
             :key="id"
@@ -213,7 +213,7 @@
             </div>
           </nuxt-link>
         </div>
-        <nuxt-link to="/resources" class="btn btn-secondary"
+        <nuxt-link to="/tai-lieu-tham-khao" class="btn btn-secondary"
           >Get More Resources</nuxt-link
         >
       </div>

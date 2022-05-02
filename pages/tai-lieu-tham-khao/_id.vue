@@ -37,7 +37,7 @@ export default {
       }
     } catch (error) {
       console.log('error', error)
-      redirect('/resources')
+      redirect('/tai-lieu-tham-khao')
     }
   },
   head() {
@@ -58,7 +58,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: `https://daudohouse.com/resources/${this.slug}`,
+          content: `https://daudohouse.com/tai-lieu-tham-khao/${this.slug}`,
         },
         {
           hid: 'og:type',
