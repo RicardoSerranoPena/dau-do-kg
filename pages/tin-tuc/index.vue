@@ -1,12 +1,12 @@
 <template>
-  <main v-if="!getObjects.objects" class="page">
+  <main v-if="!getObjects" class="page">
     <h1 style="text-align: center">Đang tải nội dung...</h1>
   </main>
   <main v-else class="newsletters-page page">
     <header class="section-title">
       <h1>Tin Tức</h1>
     </header>
-    <div class="newsletter-cards">
+    <div class="newsletter-cards" v-if="getObjects.objects">
       <div
         v-for="{ slug, title, metadata } in getObjects.objects"
         :key="title"

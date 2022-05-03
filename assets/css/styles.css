@@ -477,7 +477,30 @@ footer {
   margin: 0 0.5rem;
 }
 
-form.subscribe {
+.footer-site-map {
+  max-width: 15rem;
+  height: 100%;
+}
+
+.site-map-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.site-map-links a {
+  display: block;
+  text-decoration: none;
+  color: var(--clr-text-dark);
+}
+
+.site-map-links a:hover {
+  color: var(--clr-secondary);
+  text-decoration: underline;
+}
+
+/* form.subscribe {
   padding-top: 0;
   display: inline-flex;
   max-width: 100%;
@@ -495,7 +518,7 @@ form.subscribe #subscribe-button {
   padding: 0 0.75em;
   margin-left: -6.1rem;
   box-shadow: none;
-}
+} */
 
 @media only screen and (min-width: 600px) {
   .footer {
@@ -513,7 +536,7 @@ form.subscribe #subscribe-button {
   .footer {
     grid-template-areas:
       '    lg lg lg lg     cont cont cont hrs hrs hrs'
-      'subs subs subs subs cont cont cont hrs hrs hrs';
+      '  map map map map   cont cont cont hrs hrs hrs';
     grid-template-columns: repeat(10, 1fr);
     column-gap: 1em;
   }
@@ -531,8 +554,8 @@ form.subscribe #subscribe-button {
   .footer-working-hours {
     grid-area: hrs;
   }
-  .footer-subscribe {
-    grid-area: subs;
+  .footer-site-map {
+    grid-area: map;
   }
 }
 

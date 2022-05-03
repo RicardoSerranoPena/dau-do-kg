@@ -38,22 +38,18 @@
       <p>Holidays - Closed</p>
       <p>Weekends - Closed</p>
     </div>
-    <div class="footer-subscribe">
+    <div class="footer-site-map">
       <h4 class="title">Sơ Đồ Trang Web</h4>
-      <form class="subscribe">
-        <label for="subscribe-email">Email</label>
-        <input
-          tpye="text"
-          id="subscribe-email"
-          placeholder="Your Email Address"
-        />
-        <input
-          type="submit"
-          id="subscribe-button"
-          value="Subscribe"
-          class="btn-form btn-primary"
-        />
-      </form>
+      <div class="site-map-links">
+        <nuxt-link to="/">Trang Chủ</nuxt-link>
+        <nuxt-link to="/ghi-danh">Ghi Danh</nuxt-link>
+
+        <nuxt-link to="/gioi-thieu">Giới Thiệu</nuxt-link>
+        <nuxt-link to="/triet-hoc">Triết Học</nuxt-link>
+
+        <nuxt-link to="/tin-tuc">Tin Tức</nuxt-link>
+        <nuxt-link to="/tai-lieu-tham-khao">Tài Liệu Tham Khảo</nuxt-link>
+      </div>
     </div>
   </footer>
 </template>
