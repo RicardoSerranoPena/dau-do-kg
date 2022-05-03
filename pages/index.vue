@@ -75,6 +75,7 @@
         </div>
         <div class="body-right">
           <img
+            loading="lazy"
             class="figure-hover-animation"
             src="~/assets/images/kids-eating.jpg"
           />
@@ -107,7 +108,7 @@
           <a href="" class="btn btn-primary">Learn More</a>
         </div>
         <div class="body-right">
-          <img src="~/assets/images/woodplane.png" />
+          <img loading="lazy" src="~/assets/images/woodplane.webp" />
         </div>
       </div>
     </section>
@@ -119,7 +120,7 @@
         <div class="cards">
           <div class="card testimonial-card">
             <div class="testimonial-img-wrapper">
-              <div class="testimonial-img"></div>
+              <div loading="lazy" class="testimonial-img"></div>
             </div>
             <h4 class="testimonial-name">Name Lastname</h4>
             <p class="testimonial-role">Parent</p>
@@ -164,6 +165,7 @@
         <div class="newsletter-card hover-animation">
           <div class="newsletter-card-img-wrapper">
             <div
+              loading="lazy"
               class="newsletter-card-img"
               v-bind:style="{
                 backgroundImage: 'url(' + newsletter.heroURL + ')',
@@ -201,6 +203,7 @@
             :key="id"
           >
             <img
+              loading="lazy"
               src="~/assets/images/document-icon.png"
               alt="document icon"
               class="resources-icon"
@@ -221,7 +224,7 @@
     <section id="apply" class="apply">
       <div class="apply-card hover-animation">
         <div class="apply-img-wrapper">
-          <div class="apply-img"></div>
+          <div loading="lazy" class="apply-img"></div>
         </div>
         <div class="apply-form">
           <header>

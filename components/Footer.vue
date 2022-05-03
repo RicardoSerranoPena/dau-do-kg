@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
-    <img class="footer-logo" src="~/assets/images/Title-logo.png" />
-    <img class="footer-logo-full" src="~/assets/images/ddhk-logo.png" />
+    <img class="footer-logo" src="~/assets/images/Title-logo.webp" />
+    <img class="footer-logo-full" src="~/assets/images/ddhk-logo.webp" />
     <div class="footer-contact-us">
       <h4 class="title">Liên Hệ</h4>
       <div>
