@@ -3,7 +3,7 @@
     <img class="footer-logo" src="~/assets/images/Title-logo.png" />
     <img class="footer-logo-full" src="~/assets/images/ddhk-logo.png" />
     <div class="footer-contact-us">
-      <h4 class="title">Contact Us</h4>
+      <h4 class="title">Liên Hệ</h4>
       <div>
         <img src="~/assets/images/phone-alt-solid.svg" />
         <p>(323)555-3245</p>
@@ -32,14 +32,14 @@
       </div>
     </div>
     <div class="footer-working-hours">
-      <h4 class="title">Working Hours</h4>
+      <h4 class="title">Giờ Làm Việc</h4>
       <p>Monday to Friday</p>
       <p>Open from 9am to 6pm</p>
       <p>Holidays - Closed</p>
       <p>Weekends - Closed</p>
     </div>
     <div class="footer-subscribe">
-      <h4 class="title">Subscribe to Our Newsletter</h4>
+      <h4 class="title">Sơ Đồ Trang Web</h4>
       <form class="subscribe">
         <label for="subscribe-email">Email</label>
         <input

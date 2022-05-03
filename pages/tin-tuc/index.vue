@@ -1,7 +1,10 @@
 <template>
-  <main class="newsletters-page page">
+  <main v-if="!getObjects.objects" class="page">
+    <h1 style="text-align: center">Đang tải nội dung...</h1>
+  </main>
+  <main v-else class="newsletters-page page">
     <header class="section-title">
-      <h1>Newsletters</h1>
+      <h1>Tin Tức</h1>
     </header>
     <div class="newsletter-cards">
       <div

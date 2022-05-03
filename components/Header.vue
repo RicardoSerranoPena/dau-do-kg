@@ -18,16 +18,16 @@
     <nav>
       <ul id="primary-nav-bar" data-visible="false" class="primary-nav-bar">
         <li>
-          <a href="#">About</a>
+          <nuxt-link to="/gioi-thieu">Giới Thiệu</nuxt-link>
         </li>
         <li>
-          <a href="#">Philosopy</a>
+          <nuxt-link to="/triet-hoc">Triết Học</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/tin-tuc">Tin Tức</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/#apply" class="clr-accent">Apply</nuxt-link>
+          <nuxt-link to="/#apply" class="clr-accent">Ghi Danh</nuxt-link>
         </li>
       </ul>
     </nav>

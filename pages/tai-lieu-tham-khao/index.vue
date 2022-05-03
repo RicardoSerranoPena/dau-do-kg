@@ -1,7 +1,10 @@
 <template>
-  <main class="resources-page page">
+  <main v-if="!resources" class="page">
+    <h1 style="text-align: center">Đang tải nội dung...</h1>
+  </main>
+  <main v-else class="resources-page page">
     <header class="section-title">
-      <h1>Resources</h1>
+      <h1>Tài Liệu Tham Khảo</h1>
     </header>
 
     <div class="select-type">
