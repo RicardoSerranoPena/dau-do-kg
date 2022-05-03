@@ -77,7 +77,7 @@
           <img
             loading="lazy"
             class="figure-hover-animation"
-            src="~/assets/images/kids-eating.jpg"
+            src="~/assets/images/kids-eating.webp"
           />
         </div>
       </div>
@@ -165,7 +165,6 @@
         <div class="newsletter-card hover-animation">
           <div class="newsletter-card-img-wrapper">
             <div
-              loading="lazy"
               class="newsletter-card-img"
               v-bind:style="{
                 backgroundImage: 'url(' + newsletter.heroURL + ')',
@@ -224,7 +223,7 @@
     <section id="apply" class="apply">
       <div class="apply-card hover-animation">
         <div class="apply-img-wrapper">
-          <div loading="lazy" class="apply-img"></div>
+          <div class="apply-img"></div>
         </div>
         <div class="apply-form">
           <header>
