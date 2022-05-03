@@ -4,7 +4,7 @@
     <nuxt-link to="/"
       ><img
         class="logo"
-        src="~/assets/images/Title-logo.png"
+        src="~/assets/images/Title-logo.webp"
         alt="ĐẬU ĐỖ HOUSE"
     /></nuxt-link>
     <button
