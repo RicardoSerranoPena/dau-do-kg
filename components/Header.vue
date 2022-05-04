@@ -5,6 +5,8 @@
       ><img
         class="logo"
         src="~/assets/images/Title-logo.webp"
+        width="295"
+        height="60"
         alt="ĐẬU ĐỖ HOUSE"
     /></nuxt-link>
     <button

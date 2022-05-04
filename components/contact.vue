@@ -14,11 +14,18 @@
         <img src="~/assets/images/envelope-solid.svg" class="" />
       </a>
       <a href="https://zalo.com"
-        ><img src="~/assets/images/zalo-logo.png" alt="zalo logo" class="round"
+        ><img
+          width="50"
+          height="50"
+          src="~/assets/images/zalo-logo.webp"
+          alt="zalo logo"
+          class="round"
       /></a>
       <a href="https://facebook.com"
         ><img
-          src="~/assets/images/fb-logo.png"
+          width="50"
+          height="50"
+          src="~/assets/images/fb-logo.webp"
           alt="facebook logo"
           class="round"
       /></a>

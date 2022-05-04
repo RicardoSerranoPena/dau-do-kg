@@ -252,6 +252,10 @@ input {
 
 .nav-header img.logo {
   z-index: 9999;
+  width: 295px;
+  height: auto;
+  aspect-ratio: 59/12;
+  margin-left: 1rem;
 }
 
 .mobile-nav-toggle {
@@ -311,7 +315,9 @@ input {
     z-index: 9999;
     position: absolute;
     left: 1rem;
-    top: 1rem;
+    top: 1.2rem;
+    width: 266px;
+    margin: 0;
   }
 
   .mobile-nav-toggle {
@@ -391,6 +397,7 @@ input {
 .contact-links img {
   display: inline;
   width: min(2.6rem, 10vw);
+  height: auto;
   margin: 0 0.6rem;
   vertical-align: middle;
 

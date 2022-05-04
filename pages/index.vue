@@ -71,7 +71,9 @@
             chups. Sesame snaps wafer carrot cake powder shortbread wafer bear
             claw.
           </p>
-          <a href="" class="btn btn-primary">Learn More</a>
+          <nuxt-link to="/gioi-thieu" class="btn btn-primary"
+            >Learn More</nuxt-link
+          >
         </div>
         <div class="body-right">
           <img
@@ -105,7 +107,9 @@
             croissant cotton candy carrot cake candy cupcake. Powder jelly-o
             danish wafer tiramisu.
           </p>
-          <a href="" class="btn btn-primary">Learn More</a>
+          <nuxt-link to="/triet-hoc" class="btn btn-primary"
+            >Learn More</nuxt-link
+          >
         </div>
         <div class="body-right">
           <img loading="lazy" src="~/assets/images/woodplane.webp" />

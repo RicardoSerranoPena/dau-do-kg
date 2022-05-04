@@ -19,13 +19,13 @@
       <div class="social-media">
         <a href="https://zalo.com"
           ><img
-            src="~/assets/images/zalo-logo.png"
+            src="~/assets/images/zalo-logo.webp"
             alt="zalo logo"
             class="hover-animation"
         /></a>
         <a href="https://facebook.com"
           ><img
-            src="~/assets/images/fb-logo.png"
+            src="~/assets/images/fb-logo.webp"
             alt="facebook logo"
             class="hover-animation"
         /></a>
