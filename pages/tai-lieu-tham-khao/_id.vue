@@ -13,7 +13,7 @@
 import getResource from '~/queries/getResource'
 
 export default {
-  async asyncData({ app, params, redirect }) {
+  async asyncData({ app, params, error }) {
     const client = app.apolloProvider.defaultClient
     const { id } = params
     try {
@@ -35,9 +35,11 @@ export default {
         content,
         metadata,
       }
-    } catch (error) {
-      console.log('error', error)
-      redirect('/tai-lieu-tham-khao')
+    } catch (err) {
+      // console.log('error', error)
+      error({
+        statusCode: 404,
+      })
     }
   },
   head() {

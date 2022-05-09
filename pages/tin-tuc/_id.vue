@@ -19,7 +19,7 @@
 import getNewsletter from '~/queries/getNewsletter'
 
 export default {
-  async asyncData({ app, params, redirect }) {
+  async asyncData({ app, params, error }) {
     const client = app.apolloProvider.defaultClient
     const { id } = params
 
@@ -40,9 +40,11 @@ export default {
         content,
         metadata,
       }
-    } catch (error) {
-      console.log('error', error)
-      redirect('/tin-tuc')
+    } catch (err) {
+      // console.log('error', error)
+      error({
+        statusCode: 404,
+      })
     }
   },
   head() {

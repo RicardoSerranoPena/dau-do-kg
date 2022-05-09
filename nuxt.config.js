@@ -147,6 +147,11 @@ export default {
     link: [{ rel: 'manifest', href: '/manifest.json' }],
   },
 
+  // For rendering error page
+  generate: {
+    fallback: true,
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/css/styles.css'],
 

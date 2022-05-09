@@ -16,6 +16,7 @@
   7. Newsletter Page & Resource Page
   8. Resources Page
   9. Form Success Page 
+  10. Error Page
 
 
 --------------*/
@@ -317,6 +318,7 @@ input {
     left: 1rem;
     top: 1.2rem;
     width: 266px;
+    max-width: 70%;
     margin: 0;
   }
 
@@ -1276,4 +1278,20 @@ img.newsletter-hero {
   margin: 0 auto;
 
   font-size: 1.3rem;
+}
+
+/*--------------
+    Error Page
+  --------------*/
+.error-page {
+  text-align: center;
+}
+
+.error-page header {
+  margin-bottom: 1rem;
+}
+
+.error-page .img-wrapper {
+  display: flex;
+  justify-content: center;
 }
