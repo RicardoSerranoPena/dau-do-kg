@@ -6,15 +6,19 @@
       <h4 class="title">Liên Hệ</h4>
       <div>
         <img src="~/assets/images/phone-alt-solid.svg" />
-        <p>(323)555-3245</p>
+        <a href="tel:0965160004">0965160004</a>
       </div>
       <div>
         <img src="~/assets/images/envelope-solid.svg" />
-        <p>daodokindergarten@gmail.com</p>
+        <a href="mailto:daodokindergarten@gmail.com"
+          >daodokindergarten@gmail.com</a
+        >
       </div>
       <div>
         <img src="~/assets/images/map-marker-solid.svg" />
-        <p>Street Name 123 - New York Elevent</p>
+        <a href="https://goo.gl/maps/GixGi8GJ12C5Hrdv9"
+          >Ngõ 4 Đỗ Đức Dục, Mễ Trì, Hà Nội, Vietnam</a
+        >
       </div>
       <div class="social-media">
         <a href="https://zalo.com"
@@ -39,7 +43,7 @@
       <p>Weekends - Closed</p>
     </div>
     <div class="footer-site-map">
-      <h4 class="title">Sơ Đồ Trang Web</h4>
+      <h4 class="title">Tìm Kiếm</h4>
       <div class="site-map-links">
         <nuxt-link to="/">Trang Chủ</nuxt-link>
         <nuxt-link to="/ghi-danh">Ghi Danh</nuxt-link>

@@ -23,13 +23,13 @@
           <nuxt-link to="/gioi-thieu">Giới Thiệu</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/triet-hoc">Triết Học</nuxt-link>
+          <nuxt-link to="/triet-hoc">Phương Pháp Giáo Dục</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/tin-tuc">Tin Tức</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/#apply" class="clr-accent">Ghi Danh</nuxt-link>
+          <nuxt-link to="/#apply" class="clr-accent">Tuyển Sinh</nuxt-link>
         </li>
       </ul>
     </nav>

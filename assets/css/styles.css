@@ -651,7 +651,7 @@ form.subscribe #subscribe-button {
 }
 
 .card-title {
-  font-size: clamp(1.25rem, 0.84rem + 0.8vw, 1.8rem);
+  font-size: clamp(1.2rem, 0.84rem + 0.8vw, 1.3rem);
   padding: 1rem 1rem 0;
 }
 
@@ -767,7 +767,7 @@ form.subscribe #subscribe-button {
 }
 
 .testimonial-card:nth-child(2) .testimonial-img {
-  background-image: url(~/assets/images/person2.webp);
+  background-image: url(~/assets/images/linh.webp);
   background-size: 15rem;
 }
 

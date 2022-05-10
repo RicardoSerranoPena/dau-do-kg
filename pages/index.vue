@@ -3,8 +3,8 @@
     <section class="hero">
       <header>
         <h2 class="hero-title">
-          gieo nhân tốt,<br />
-          gặt quả lành
+          Yêu thương chân thật,<br />
+          Hạnh phúc chân thật
         </h2>
       </header>
     </section>
@@ -12,33 +12,34 @@
     <section class="highlights">
       <div class="cards">
         <div class="card">
-          <h3 class="card-title">Licensed Child Care</h3>
+          <h3 class="card-title">Giáo dục từ trái tim</h3>
           <p class="card-body">
-            Cupcake ipsum dolor sit amet jelly beans gummies. Sweet chupa chups
-            chocolate oat cake caramels jujubes muffin marshmallow. Gingerbread
-            oat cake caramels icing topping.
+            Nhà trường luôn chú trọng đến đời sống của các cô, để cùng sống với
+            đạo đức thương mình, thương người, một tình thương rộng lớn phủ trùm
+            vũ trụ, vạn vật để nuôi dưỡng các bé cũng có tình yêu thương như
+            vậy.
           </p>
           <div class="card-img-wrapper">
             <div class="card-img" />
           </div>
         </div>
         <div class="card">
-          <h3 class="card-title">High Quality Learning</h3>
+          <h3 class="card-title">Vật liệu tự nhiên</h3>
           <p class="card-body">
-            Cupcake ipsum dolor sit amet cotton candy candy tootsie roll.
-            Marshmallow candy canes sugar plum bonbon sugar plum. Sweet bonbon
-            soufflé dessert apple pie. Jelly-o
+            Đồ chơi tại trường hoàn toàn làm bằng đôi bàn tay mẹ, của cha và của
+            cô giáo để khơi gợi lòng biết ơn của trẻ. Vật liệu được nhập khẩu từ
+            nước ngoài, 100% làm từ nguyên liệu thân thiện với môi trường.
           </p>
           <div class="card-img-wrapper">
             <div class="card-img" />
           </div>
         </div>
         <div class="card">
-          <h3 class="card-title">The Talented Staff</h3>
+          <h3 class="card-title">Ngôi trường hạnh phúc</h3>
           <p class="card-body">
-            Cupcake ipsum dolor sit amet lollipop marshmallow. Sweet chocolate
-            cake liquorice dessert jelly-o cake jujubes shortbread. Apple pie
-            sugar plum gingerbread
+            Chúng tôi mong muốn xây dựng một ngôi trường hạnh phúc, để trẻ được
+            an toàn, tự do sáng tạo, gần gũi với thiên nhiên, tập yêu thương con
+            người, động vật và cả cây cỏ hoa lá.
           </p>
           <div class="card-img-wrapper">
             <div class="card-img" />
@@ -47,29 +48,21 @@
       </div>
     </section>
     <section class="about-us">
-      <header><h2 class="section-title">About Us</h2></header>
+      <header><h2 class="section-title">Giới Thiệu</h2></header>
       <div class="section-body">
         <div class="body-left">
           <p>
-            Cupcake ipsum dolor sit amet. Powder donut gummies jelly beans
-            gingerbread. Halvah sugar plum caramels candy canes pastry cake.
-            Gingerbread cookie bear claw jelly ice cream jelly-o tart. Tart
-            sesame snaps caramels lemon drops chocolate icing cake toffee
-            chocolate bar. Pudding jelly-o carrot cake gummies chupa chups.
-            Gingerbread brownie halvah donut cookie chocolate cake jelly beans
-            macaroon.
+            Trường mần non Đậu Đỗ House được thành lập vào tháng 1/4/2019 do một
+            nhóm các nhà giáo dục tâm huyết trong lĩnh vực giáo dục trẻ kết hợp
+            với hệ thống nhà hàng Tâm Chay theo phương pháp giáo dục thuận tự
+            nhiên, mong muốn xây dựng một ngôi trường hạnh phúc, ở đó trẻ được
+            an toàn, yêu thương, tự do sáng tạo, gần gũi với thiên nhiên.
           </p>
           <p>
-            Chocolate bar icing sugar plum cupcake gingerbread candy canes.
-            Wafer danish icing chocolate bar topping marshmallow muffin brownie.
-            Bonbon chocolate bar oat cake bonbon gummi bears. Jelly halvah
-            bonbon chocolate cake donut chocolate cake chupa chups. Tiramisu
-            caramels candy chupa chups chocolate. Marshmallow tootsie roll gummi
-            bears biscuit caramels lollipop sweet roll gummi bears. Candy canes
-            sweet roll halvah dessert dragée jujubes gummi bears lemon drops.
-            Dragée icing dessert chupa chups halvah brownie fruitcake chupa
-            chups. Sesame snaps wafer carrot cake powder shortbread wafer bear
-            claw.
+            Trường Mầm non Đậu Đỗ House - Đỗ Đức Dục trả trẻ con về thế giới
+            giao tiếp từ trái tim và sống chan hòa cùng tự nhiên, đưa các con về
+            giá trị sống cốt lõi là sống với lòng yêu thương chan hoà. Tạo môi
+            trường và...
           </p>
           <nuxt-link to="/gioi-thieu" class="btn btn-primary"
             >Learn More</nuxt-link
@@ -86,27 +79,20 @@
     </section>
     <section class="our-philosophy">
       <header>
-        <h2 class="section-title">Our Philosophy</h2>
+        <h2 class="section-title">Phương Pháp Giáo Dục</h2>
       </header>
       <div class="section-body">
         <div class="body-left">
           <p>
-            Cupcake ipsum dolor sit amet apple pie marzipan cookie. Pie candy
-            canes ice cream dragée brownie. Carrot cake bear claw pie liquorice
-            toffee gummies.
+            Trường Mầm non Đậu Đỗ House - Đỗ Đức Dục trả trẻ con về thế giới
+            giao tiếp từ trái tim và sống chan hòa cùng tự nhiên, đưa các con về
+            giá trị sống cốt lõi là sống với lòng yêu thương chan hoà. Đồ chơi
+            tại trường hoàn toàn là vật liệu tự nhiên, bằng đôi bàn tay mẹ, bằng
+            sức mạnh của cha, khéo léo của cô giáo chứa đựng đầy sức sống và
+            giàu cảm xúc, khơi gợi lòng biết ơn, sự trân trọng, phát triển trí
+            tưởng tượng và sáng tạo kỳ diệu của trẻ.
           </p>
-          <p>
-            Topping candy canes pudding biscuit lollipop pudding apple pie
-            chocolate cake. Macaroon gummi bears cake sugar plum croissant apple
-            pie dragée. Candy jelly beans biscuit candy canes dessert ice cream
-            pie. Icing tart macaroon gingerbread toffee bear claw wafer.
-          </p>
-          <p>
-            Gingerbread shortbread gummies carrot cake tootsie roll oat cake
-            wafer. Croissant sweet roll cheesecake pie ice cream. Wafer cupcake
-            croissant cotton candy carrot cake candy cupcake. Powder jelly-o
-            danish wafer tiramisu.
-          </p>
+          <p>Ngoài ra, Màu sáp, màu nước, sáp ong, đồ chơi…</p>
           <nuxt-link to="/triet-hoc" class="btn btn-primary"
             >Learn More</nuxt-link
           >
@@ -118,7 +104,7 @@
     </section>
     <section class="testimonials">
       <header>
-        <h2 class="section-title">Testimonials</h2>
+        <h2 class="section-title">Những lời chứng thực</h2>
       </header>
       <div class="section-body">
         <div class="cards">
@@ -138,12 +124,16 @@
             <div class="testimonial-img-wrapper">
               <div class="testimonial-img"></div>
             </div>
-            <h4 class="testimonial-name">Name Lastname</h4>
-            <p class="testimonial-role">Director</p>
+            <h4 class="testimonial-name">Khánh Mai Linh</h4>
+            <p class="testimonial-role">Quản Lý tại trường</p>
             <p class="testimonial-quote">
-              Cupcake ipsum dolor sit amet muffin. Tiramisu dessert wafer
-              gummies chocolate cake pastry chocolate bar soufflé. Jujubes cake
-              tiramisu sweet roll chocolate.
+              “Tôi có một tâm huyết vô cùng lớn trong lĩnh vực giáo dục trẻ em
+              mong muốn mang lại cho các con một ngôi trường yêu thương, ở đó
+              các con luôn được tự do học hỏi, tôn trọng, an toàn, tự khám phá
+              trải nghiệm bằng sự tò mò lớn nhất, ở đó các con được yêu thương
+              nâng đỡ vô điều kiện, mọi tri thức luôn không ngừng biến đổi nhưng
+              với mong muốn luôn học hỏi, khám phám bằng trái tim yêu thương lớn
+              lao sẽ giúp các con thích nghi trong mọi hoàn cảnh cuộc sống.”
             </p>
           </div>
           <div class="card testimonial-card">
@@ -164,7 +154,7 @@
     <section class="newsletter-resources">
       <div class="newsletter">
         <header>
-          <h2 class="section-title">Newsletter</h2>
+          <h2 class="section-title">Tin Tức</h2>
         </header>
         <div class="newsletter-card hover-animation">
           <div class="newsletter-card-img-wrapper">
@@ -196,7 +186,7 @@
       </div>
       <div class="resources">
         <header>
-          <h2 class="section-title">Resources</h2>
+          <h2 class="section-title">Tài Liệu Tham Khảo</h2>
         </header>
         <div class="resources-cards">
           <nuxt-link
@@ -231,7 +221,7 @@
         </div>
         <div class="apply-form">
           <header>
-            <h2 class="form-title">Enroll Today</h2>
+            <h2 class="form-title">Đăng ký ngay để nhận tư vấn</h2>
           </header>
           <form
             netlify
@@ -252,7 +242,7 @@
                 type="text"
                 id="first-name"
                 name="first-name"
-                placeholder="First Name"
+                placeholder="Họ"
                 oninvalid="this.setCustomValidity('Please enter your name')"
                 oninput="setCustomValidity('')"
                 maxlength="50"
@@ -263,7 +253,7 @@
                 type="text"
                 id="last-name"
                 name="last-name"
-                placeholder="Last Name"
+                placeholder="Tên"
                 oninvalid="this.setCustomValidity('Please enter your last name')"
                 oninput="setCustomValidity('')"
                 maxlength="50"
@@ -275,7 +265,7 @@
               type="email"
               id="email"
               name="email"
-              placeholder="Email Address"
+              placeholder="Địa chỉ Email"
               oninvalid="this.setCustomValidity('Please enter your email address')"
               oninput="setCustomValidity('')"
               maxlength="320"
@@ -286,7 +276,7 @@
               type="tel"
               id="phone"
               name="phone"
-              placeholder="Phone Number"
+              placeholder="Số điện thoại"
               oninvalid="this.setCustomValidity('Please enter your phone number')"
               oninput="setCustomValidity('')"
               maxlength="12"
@@ -294,7 +284,7 @@
             />
             <input
               type="submit"
-              value="Enroll"
+              value="Nộp đơn"
               class="btn-form btn-secondary"
             />
             <input type="hidden" name="form-name" value="Apply" />
