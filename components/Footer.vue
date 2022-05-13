@@ -15,9 +15,7 @@
 
         <span>Email</span>
         <!-- <img src="~/assets/images/envelope-solid-dark.svg" /> -->
-        <a href="mailto:daodokindergarten@gmail.com"
-          >daodokindergarten@gmail.com</a
-        >
+        <a href="mailto:mndaudohouse@gmail.com">mndaudohouse@gmail.com</a>
         <span>Website</span>
         <a href="https://daudohouse.com">https://daudohouse.com</a>
       </div>
@@ -50,7 +48,7 @@
             />
           </a>
           <a
-            href="mailto:daudokindergarten@gmail.com"
+            href="mailto:mndaudohouse@gmail.com"
             target="_blank"
             class="phone-svg"
           >
@@ -63,7 +61,7 @@
               height="40"
             />
           </a>
-          <a href="https://chat.zalo.me/?phone=" target="_blank"
+          <a href="https://chat.zalo.me/?phone=0965160004" target="_blank"
             ><img
               loading="lazy"
               src="~/assets/images/zalo-logo.webp"

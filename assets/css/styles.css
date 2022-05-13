@@ -219,7 +219,8 @@ label {
   display: none;
 }
 
-input {
+input,
+textarea {
   width: 100%;
   padding: 0.2em 0.65em;
   margin: 0.6em 0;
@@ -228,7 +229,8 @@ input {
   box-shadow: var(--bx-shadow);
 }
 
-input {
+input,
+textarea {
   font-size: 1rem;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
   font-weight: lighter;
@@ -530,6 +532,16 @@ ul.site-map-links {
   flex-direction: row;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.footer-social-media .social-media a {
+  transform: var(--transform-hover-off);
+  transition: var(--transition-hover-off);
+}
+
+.footer-social-media .social-media a:hover {
+  transform: var(--transform-hover);
+  transition: var(--transition-hover);
 }
 
 .social-media img {

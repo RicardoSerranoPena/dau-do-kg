@@ -7,7 +7,7 @@
       @click="toggleContactLinks"
     ></button>
     <div id="contact-links" class="contact-links">
-      <a href="tel:123-456-8909" target="_blank">
+      <a href="tel:0965160004" target="_blank">
         <img
           src="~/assets/images/phone-alt-solid-light.svg"
           alt="Biểu tượng điện thoại"
@@ -16,7 +16,7 @@
           height="40"
         />
       </a>
-      <a href="mailto:daudohousekindergarten@gmail.com" target="_blank">
+      <a href="mailto:mndaudohouse@gmail.com" target="_blank">
         <img
           src="~/assets/images/envelope-solid-light.svg"
           alt="Biểu tượng email"
@@ -25,7 +25,7 @@
           height="40"
         />
       </a>
-      <a href="https://chat.zalo.me/?phone=" target="_blank"
+      <a href="https://chat.zalo.me/?phone=0965160004" target="_blank"
         ><img
           src="~/assets/images/zalo-logo.webp"
           alt="zalo logo"

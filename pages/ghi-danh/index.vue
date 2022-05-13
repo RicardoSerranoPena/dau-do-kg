@@ -22,55 +22,73 @@
                 <input name="bot-field" />
               </label>
             </p>
-            <div class="form-group">
-              <label for="first-name">First Name</label>
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                placeholder="First Name"
-                oninvalid="this.setCustomValidity('Please enter your name')"
-                oninput="setCustomValidity('')"
-                maxlength="50"
-                required
-              />
-              <label for="last-name">Last Name</label>
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                placeholder="Last Name"
-                oninvalid="this.setCustomValidity('Please enter your last name')"
-                oninput="setCustomValidity('')"
-                maxlength="50"
-                required
-              />
-            </div>
+            <label for="parent-name">Họ tên Phụ huynh</label>
+            <input
+              type="text"
+              id="parent-name"
+              name="parent-name"
+              placeholder="Họ tên Phụ huynh"
+              oninvalid="this.setCustomValidity('Vui lòng nhập tên phụ huynh')"
+              oninput="setCustomValidity('')"
+              maxlength="50"
+              required
+            />
+            <label for="student-name">Họ tên Học sinh</label>
+            <input
+              type="text"
+              id="student-name"
+              name="student-name"
+              placeholder="Họ tên Học sinh"
+              oninvalid="this.setCustomValidity('Vui lòng nhập tên học sinh')"
+              oninput="setCustomValidity('')"
+              maxlength="50"
+              required
+            />
+            <label for="age">Tuổi học sinh</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              placeholder="Tuổi học sinh"
+              oninvalid="this.setCustomValidity('Vui lòng nhập tuổi của học sinh')"
+              oninput="setCustomValidity('')"
+              maxlength="1"
+              required
+            />
             <label for="email">Email</label>
             <input
               type="email"
               id="email"
               name="email"
-              placeholder="Email Address"
-              oninvalid="this.setCustomValidity('Please enter your email address')"
+              placeholder="Địa chỉ Email"
+              oninvalid="this.setCustomValidity('Vui lòng nhập email của bạn')"
               oninput="setCustomValidity('')"
               maxlength="320"
               required
             />
-            <label for="phone">Phone</label>
+            <label for="phone">Số điện thoại</label>
             <input
               type="tel"
               id="phone"
               name="phone"
-              placeholder="Phone Number"
-              oninvalid="this.setCustomValidity('Please enter your phone number')"
+              placeholder="Số điện thoại"
+              oninvalid="this.setCustomValidity('Vui lòng điền số điện thoại của bạn')"
               oninput="setCustomValidity('')"
               maxlength="12"
               required
             />
+            <label for="message">Tin nhắn</label>
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Lời nhắn đến Đậu Đỗ"
+              maxlength="500"
+              rows="4"
+            />
             <input
               type="submit"
-              value="Enroll"
+              value="Nộp đơn"
               class="btn-form btn-secondary"
             />
             <input type="hidden" name="form-name" value="Apply" />
