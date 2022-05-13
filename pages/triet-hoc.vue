@@ -30,7 +30,7 @@
         <img
           loading="lazy"
           src="~/assets/images/child-with-toy.webp"
-          alt="trẻ em ỏ Đậu Đỗ"
+          alt="trẻ em chơi với đồ chơi bằng gỗ"
           class="round"
           width="800"
           height="1200"

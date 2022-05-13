@@ -7,30 +7,39 @@
       @click="toggleContactLinks"
     ></button>
     <div id="contact-links" class="contact-links">
-      <a href="tel:123-456-8909">
+      <a href="tel:123-456-8909" target="_blank">
         <img
           src="~/assets/images/phone-alt-solid-light.svg"
+          alt="Biểu tượng điện thoại"
           class="phone-svg"
+          width="40"
+          height="40"
         />
       </a>
-      <a href="mailto:daudohousekindergarten@gmail.com">
-        <img src="~/assets/images/envelope-solid-light.svg" class="" />
+      <a href="mailto:daudohousekindergarten@gmail.com" target="_blank">
+        <img
+          src="~/assets/images/envelope-solid-light.svg"
+          alt="Biểu tượng email"
+          class=""
+          width="40"
+          height="40"
+        />
       </a>
-      <a href="https://zalo.com"
+      <a href="https://chat.zalo.me/?phone=" target="_blank"
         ><img
-          width="50"
-          height="50"
           src="~/assets/images/zalo-logo.webp"
           alt="zalo logo"
           class="round"
+          width="40"
+          height="40"
       /></a>
-      <a href="https://facebook.com"
+      <a href="https://www.facebook.com/daudohouse.preschool" target="_blank"
         ><img
-          width="50"
-          height="50"
           src="~/assets/images/fb-logo.webp"
           alt="facebook logo"
           class="round"
+          width="40"
+          height="40"
       /></a>
     </div>
   </div>
