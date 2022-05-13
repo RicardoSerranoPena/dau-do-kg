@@ -5,11 +5,11 @@
     <div class="footer-contact-us">
       <h4 class="title">Liên Hệ</h4>
       <div>
-        <img src="~/assets/images/phone-alt-solid.svg" />
+        <img src="~/assets/images/phone-alt-solid-dark.svg" />
         <a href="tel:0965160004">0965160004</a>
       </div>
       <div>
-        <img src="~/assets/images/envelope-solid.svg" />
+        <img src="~/assets/images/envelope-solid-dark.svg" />
         <a href="mailto:daodokindergarten@gmail.com"
           >daodokindergarten@gmail.com</a
         >

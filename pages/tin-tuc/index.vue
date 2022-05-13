@@ -3,7 +3,7 @@
     <header class="section-title">
       <h1>Tin Tức</h1>
     </header>
-    <h2 style="text-align: center">Đang tải nội dung...</h2>
+    <h2 style="text-align: center">Đang tải...</h2>
   </main>
   <main v-else class="newsletters-page page">
     <header class="section-title">

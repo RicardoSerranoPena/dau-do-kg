@@ -1,5 +1,5 @@
 <template>
-  <main class="page">
+  <main class="page about-us-page">
     <header class="section-title">
       <h1>Giới Thiệu</h1>
     </header>
@@ -20,32 +20,64 @@
           và được nâng đỡ, khuyến khích con vượt qua nhiều thách thức, được tôn
           trọng tự trải nghiệm để học hỏi mỗi ngày.
         </p>
-        <p>
-          Giai đoạn năm 2019-2020: trường có 70 học sinh với 10 cán bộ nhân viên
-          mong muốn xây dựng một ngôi trường hạnh phúc yêu thương thuận tự
-          nhiên, các con được học hỏi khám phá theo nhịp điệu theo phương pháp
-          giáo dục steiner kết hợp với các giá trị truyền thống văn hóa của dân
-          tộc Việt Nam nuôi dưỡng tình yêu từ trái tim mỗi trẻ, trẻ được hòa
-          nhập vào cuộc sống cùng tình yêu thiên nhiên.
-        </p>
-        <p>
-          Giai đoạn 2020-2021: trong giai đoạn này, trường đã triển khai được
-          hoạt động đi vườn hàng tháng các con được ra ngoài dạo chơi với thiên
-          nhiên, khám phá xúc chạm để sự trải nghiệm của trẻ như thật, nhà
-          trường luôn cố gắng nỗ lực trong việc giúp trẻ được trải nghiệm, tự
-          thân học hỏi, khám phá nhiều nhất có thể trong khả năng của mình. Và
-          đưa ngoại ngữ với phương châm là một phương tiện học hỏi thứ 2 giúp
-          các con hòa nhập với thế giới, thuận tự nhiên, các con học với giáo
-          viên bản ngữ vui chơi với các vần điệu bài hát tự nhiên.
-        </p>
-        <p>
-          Giai đoan 2021-2022: Giai đoạn này, vừa là cơ hội vừa là thách thức
-          với giáo dục mầm non, nhưng ở Đậu Đỗ House sự bình an luôn hiện hữu
-          bằng tình yêu thương rộng lớn, chúng tôi đã đào tạo giáo viên bài bản
-          hơn bởi đội ngũ chuyên gia tâm lý giáo dục trẻ em, đồng thời các kỹ
-          năng chuyên môn, giá trị sống luôn được nâng cao, cân bằng giúp các cô
-          mạnh mẽ, vững vàng an nhiên từ trong nội tâm.
-        </p>
+        <div class="timeline">
+          <div class="line l1"></div>
+          <div class="dl dl1">
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="dl dl2">
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="dl dl3">
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <p class="d d1">
+            2020 <br />
+            - <br />
+            2019
+          </p>
+          <p class="p p1">
+            Trường có 70 học sinh với 10 cán bộ nhân viên mong muốn xây dựng một
+            ngôi trường hạnh phúc yêu thương thuận tự nhiên, các con được học
+            hỏi khám phá theo nhịp điệu theo phương pháp giáo dục steiner kết
+            hợp với các giá trị truyền thống văn hóa của dân tộc Việt Nam nuôi
+            dưỡng tình yêu từ trái tim mỗi trẻ, trẻ được hòa nhập vào cuộc sống
+            cùng tình yêu thiên nhiên.
+          </p>
+          <p class="d d2">
+            2021 <br />
+            - <br />2020
+          </p>
+          <p class="p p2">
+            Trong giai đoạn này, trường đã triển khai được hoạt động đi vườn
+            hàng tháng các con được ra ngoài dạo chơi với thiên nhiên, khám phá
+            xúc chạm để sự trải nghiệm của trẻ như thật, nhà trường luôn cố gắng
+            nỗ lực trong việc giúp trẻ được trải nghiệm, tự thân học hỏi, khám
+            phá nhiều nhất có thể trong khả năng của mình. Và đưa ngoại ngữ với
+            phương châm là một phương tiện học hỏi thứ 2 giúp các con hòa nhập
+            với thế giới, thuận tự nhiên, các con học với giáo viên bản ngữ vui
+            chơi với các vần điệu bài hát tự nhiên.
+          </p>
+          <p class="d d3">
+            2022 <br />
+            - <br />
+            2021
+          </p>
+          <p class="p p3">
+            Giai đoạn này, vừa là cơ hội vừa là thách thức với giáo dục mầm non,
+            nhưng ở Đậu Đỗ House sự bình an luôn hiện hữu bằng tình yêu thương
+            rộng lớn, chúng tôi đã đào tạo giáo viên bài bản hơn bởi đội ngũ
+            chuyên gia tâm lý giáo dục trẻ em, đồng thời các kỹ năng chuyên môn,
+            giá trị sống luôn được nâng cao, cân bằng giúp các cô mạnh mẽ, vững
+            vàng an nhiên từ trong nội tâm.
+          </p>
+        </div>
       </div>
       <div class="body-right">
         <img

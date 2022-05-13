@@ -17,6 +17,7 @@
   8. Resources Page
   9. Form Success Page 
   10. Error Page
+  11. Philosopy & About Us Page
 
 
 --------------*/
@@ -29,7 +30,7 @@
   --clr-primary: #fbd500;
   --clr-secondary: #1d6e2f;
   --clr-tertiary: #fff0ca;
-  --clr-accent: #fc8c78;
+  --clr-accent: #d34a5a;
   --clr-text-dark: #474747;
   --clr-text-light: #fffced;
 
@@ -339,7 +340,7 @@ input {
   }
 
   .mobile-nav-toggle[aria-expanded='true'] {
-    background-image: url('~/assets/images/close-icon.png');
+    background-image: url('~/assets/images/close-icon-dark.png');
   }
 }
 
@@ -378,7 +379,7 @@ input {
 }
 
 .contact-us-float[data-visible='true'] .btn-contact {
-  background-image: url('~/assets/images/close-icon.png');
+  background-image: url('~/assets/images/close-icon-light.png');
 }
 
 .btn-contact {
@@ -411,8 +412,12 @@ input {
   transform: translateY(-10%);
 }
 
+img.phone-svg {
+  width: min(42px, 10vw);
+}
+
 .round {
-  border-radius: 0.5rem;
+  border-radius: var(--border-rd-all);
 }
 
 /*--------------
@@ -703,7 +708,8 @@ form.subscribe #subscribe-button {
   display: none;
 }
 
-.about-us img {
+.about-us img,
+.about-us-page img {
   width: 100%;
   border-radius: var(--border-rd-all);
   box-shadow: var(--bx-shadow);
@@ -717,7 +723,8 @@ form.subscribe #subscribe-button {
   z-index: 50;
 }
 
-.our-philosophy img {
+.our-philosophy img,
+.philosophy-page img {
   -webkit-filter: var(--drop-shadow);
   filter: var(--drop-shadow);
   margin: 0 auto;
@@ -758,7 +765,7 @@ form.subscribe #subscribe-button {
 }
 
 .testimonial-img {
-  background-image: url(~/assets/images/person1.webp);
+  background-image: url(~/assets/images/thua.webp);
   width: 100%;
   height: 100%;
   background-position: top;
@@ -877,8 +884,13 @@ form.subscribe #subscribe-button {
   display: block;
 }
 
+.newsletter-card-body a {
+  text-decoration: none;
+}
+
 .newsletter-card-body a:hover {
   color: var(--clr-secondary);
+  text-decoration: underline;
 }
 
 .resources-cards {
@@ -977,10 +989,10 @@ form.subscribe #subscribe-button {
 .apply-img {
   width: 100%;
   height: 100%;
-  background-image: url(~/assets/images/apply1.webp);
+  background-image: url(~/assets/images/girl.webp);
   background-color: var(--clr-primary);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   border-radius: var(--border-rd-all);
 }
 
@@ -1294,4 +1306,273 @@ img.newsletter-hero {
 .error-page .img-wrapper {
   display: flex;
   justify-content: center;
+}
+
+/*------------------------------
+    Philosopy & About Us Page
+  ------------------------------*/
+
+.philosophy-page,
+.about-us-page {
+  padding-inline: clamp(1rem, 0.3rem + 5vw, 5rem);
+}
+
+.philosophy-page .section-body,
+.about-us-page .section-body {
+  text-rendering: optimizeLegibility;
+  line-height: 1.5rem;
+}
+
+.about-us-page img {
+  margin-inline: auto;
+  margin-block: clamp(2rem, 1rem + 2vh, 4rem);
+}
+
+.philosophy-page .section-body {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 1rem + 2vh, 4rem);
+  max-width: min(90vw, 1000px);
+  margin-inline: auto;
+}
+
+.philosophy-page .section-body > div {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 1rem + 2vh, 4rem);
+}
+
+.philosophy-page .section-body p {
+  margin-bottom: 0;
+}
+
+.philosophy-page img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.philosophy-page .section-body .toys img,
+.philosophy-page .section-body .individualism img,
+.philosophy-page .section-body .nature img {
+  max-width: min(100%, 350px);
+}
+
+img.small {
+  width: 70%;
+}
+img.xsmall {
+  width: 60%;
+}
+
+.about-us-page .body-left {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: 2.5fr 2fr 10fr;
+  grid-template-areas:
+    'd3 dl3 p3'
+    'd2 dl2 p2'
+    'd1 dl1 p1';
+
+  margin-block: clamp(2rem, 1rem + 5vw, 10rem);
+}
+
+.dl1 {
+  grid-area: dl1;
+}
+.dl2 {
+  grid-area: dl2;
+}
+.dl3 {
+  grid-area: dl3;
+}
+.p1 {
+  grid-area: p1;
+}
+.p2 {
+  grid-area: p2;
+}
+.p3 {
+  grid-area: p3;
+}
+.d1 {
+  grid-area: d1;
+}
+.d2 {
+  grid-area: d2;
+}
+.d3 {
+  grid-area: d3;
+}
+
+.timeline .dot {
+  width: 14px;
+  height: 14px;
+  background: var(--clr-accent);
+  border-radius: 7px;
+}
+
+.timeline .line {
+  height: 50%;
+  width: 2px;
+  background: var(--clr-secondary);
+  margin-left: 5.3px;
+}
+
+.timeline .l1 {
+  display: none;
+}
+
+.timeline p {
+  padding: 1rem;
+  margin-block: 1rem;
+  color: var(--clr-text-light);
+  background-color: var(--clr-secondary);
+  border-radius: var(--border-rd-all);
+  box-shadow: var(--bx-shadow);
+  transform: translateX(0%);
+  transition: var(--transition-hover-off);
+  transition-delay: 150ms;
+}
+
+.timeline .d {
+  height: fit-content;
+  align-self: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.timeline .dl1,
+.timeline .dl2,
+.timeline .dl3 {
+  margin-inline: auto;
+}
+
+.timeline .d:hover + .p,
+.timeline .p:hover {
+  transform: translateX(-3%);
+  transition: var(--transition-hover);
+}
+
+.timeline .d:hover {
+  transform: translateX(5%);
+  transition: var(--transition-hover);
+}
+
+@media only screen and (min-width: 750px) {
+  .philosophy-page .section-body > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(1rem, 0.5rem + 4vh, 4rem);
+  }
+
+  .philosophy-page div.reverse {
+    direction: rtl;
+    text-align: left;
+  }
+
+  .philosophy-page img {
+    margin-top: 0;
+  }
+
+  .philosophy-page div.food {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .about-us-page .section-body {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+  }
+
+  .about-us-page img {
+    margin-left: 2rem;
+    margin-block: 0;
+  }
+
+  .about-us-page .body-left {
+    max-width: 600px;
+    margin-inline: 0;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .d3 {
+    order: 1;
+  }
+  .dl3 {
+    order: 2;
+  }
+  .p3 {
+    order: 3;
+  }
+  .d2 {
+    order: 4;
+  }
+  .dl2 {
+    order: 5;
+  }
+  .p2 {
+    order: 6;
+  }
+  .d1 {
+    order: 7;
+  }
+  .dl1 {
+    order: 8;
+  }
+  .p1 {
+    order: 9;
+  }
+
+  .dl {
+    display: none;
+  }
+
+  .timeline .d:hover + .p,
+  .timeline .p:hover {
+    transform: translateX(0%);
+  }
+
+  .timeline .d:hover {
+    transform: translateX(0%);
+  }
+
+  .timeline .d br {
+    content: ' ';
+  }
+
+  .timeline .d {
+    background-color: var(--clr-primary);
+    color: var(--clr-text-dark);
+  }
+
+  .timeline .dl {
+    height: 2.5rem;
+  }
+
+  .timeline .l1 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    height: 100%;
+  }
+
+  .timeline p {
+    margin-block: 1rem;
+  }
 }

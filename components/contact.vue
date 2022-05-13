@@ -8,10 +8,13 @@
     ></button>
     <div id="contact-links" class="contact-links">
       <a href="tel:123-456-8909">
-        <img src="~/assets/images/phone-alt-solid.svg" class="" />
+        <img
+          src="~/assets/images/phone-alt-solid-light.svg"
+          class="phone-svg"
+        />
       </a>
       <a href="mailto:daudohousekindergarten@gmail.com">
-        <img src="~/assets/images/envelope-solid.svg" class="" />
+        <img src="~/assets/images/envelope-solid-light.svg" class="" />
       </a>
       <a href="https://zalo.com"
         ><img

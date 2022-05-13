@@ -124,7 +124,7 @@
             <div class="testimonial-img-wrapper">
               <div class="testimonial-img"></div>
             </div>
-            <h4 class="testimonial-name">Khánh Mai Linh</h4>
+            <h4 class="testimonial-name">Mai Khánh Linh</h4>
             <p class="testimonial-role">Quản Lý tại trường</p>
             <p class="testimonial-quote">
               “Tôi có một tâm huyết vô cùng lớn trong lĩnh vực giáo dục trẻ em
@@ -176,7 +176,7 @@
               {{ newsletter.description }}
             </p>
             <nuxt-link :to="'/tin-tuc/' + newsletter.slug"
-              >Keep Reading</nuxt-link
+              >Keep Reading &#8594;</nuxt-link
             >
           </div>
         </div>

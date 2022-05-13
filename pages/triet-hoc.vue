@@ -1,10 +1,10 @@
 <template>
-  <main class="page">
+  <main class="page philosophy-page">
     <header class="section-title">
-      <h1>Triết Học</h1>
+      <h1>Phương Pháp Giáo Dục</h1>
     </header>
     <div class="section-body">
-      <div class="body-left">
+      <div class="heart">
         <p>
           Trường Mầm non Đậu Đỗ House - Đỗ Đức Dục trả trẻ con về thế giới giao
           tiếp từ trái tim và sống chan hòa cùng tự nhiên, đưa các con về giá
@@ -14,11 +14,29 @@
           xúc, khơi gợi lòng biết ơn, sự trân trọng, phát triển trí tưởng tượng
           và sáng tạo kỳ diệu của trẻ.
         </p>
+        <img
+          src="~/assets/images/woodplane.webp"
+          alt="máy bay đồ chơi trẻ em bằng gỗ"
+          width="300"
+          height="230"
+        />
+      </div>
+      <div class="toys reverse">
         <p>
-          Ngoài ra, Màu sáp, màu nước, sáp ong, đồ chơi… nhập khẩu từ nước
-          ngoài, 100% làm từ nguyên liệu thân thiện với môi trường và từ chính
-          sự sáng tạo từ đôi bàn tay của các cô giáo.
+          Ngoài ra, Màu sáp, màu nước, sáp ong, đồ chơi nhập khẩu từ nước ngoài,
+          100% làm từ nguyên liệu thân thiện với môi trường và từ chính sự sáng
+          tạo từ đôi bàn tay của các cô giáo.
         </p>
+        <img
+          loading="lazy"
+          src="~/assets/images/child-with-toy.webp"
+          alt="trẻ em ỏ Đậu Đỗ"
+          class="round"
+          width="800"
+          height="1200"
+        />
+      </div>
+      <div class="individualism">
         <p>
           Chương trình học được thiết kế cẩn thận bài bản theo đặc điểm tâm lý
           trẻ và có nhịp điệu nhằm giúp trẻ cân bằng, hài hòa với môi trường
@@ -27,6 +45,16 @@
           khuyến khích con vượt qua nhiều thách thức, được tôn trọng tự trải
           nghiệm để học hỏi mỗi ngày.
         </p>
+        <img
+          loading="lazy"
+          src="~/assets/images/girl-touching-tree.webp"
+          alt="trẻ mới biết đi với tay để chạm vào cây"
+          class="round"
+          width="800"
+          height="960"
+        />
+      </div>
+      <div class="nature reverse">
         <p>
           Hàng ngày các con được ra ngoài chơi với thiên nhiên như một phần
           không thể thiếu trong trường được tự do, sáng tạo cân bằng nội tâm,
@@ -36,6 +64,16 @@
           các nhạc cụ dân tộc hoặc từ chất liệu tự nhiên từ trái tim là những
           giọng hát mộc, tự nhiên của cô giáo.
         </p>
+        <img
+          loading="lazy"
+          src="~/assets/images/children-outside.webp"
+          alt="năm đứa trẻ chơi bên ngoài đào đất"
+          class="round"
+          width="600"
+          height="643"
+        />
+      </div>
+      <div class="teachers">
         <p>
           Đội ngũ giáo viên là tài sản vô giá nhất của trường, Trường Mầm non
           Đậu Đỗ House - Đỗ Đức Dục cố gắng tạo ra môi trường mà các cô được tôn
@@ -50,6 +88,24 @@
           lớn phủ trùm vũ trụ, vạn vật để có thể nuôi dưỡng những em bé cũng có
           tình yêu thương như vậy.
         </p>
+        <img
+          loading="lazy"
+          src="~/assets/images/teacher-student.webp"
+          alt="Một đứa trẻ tươi cười tặng hoa cho giáo viên tươi cười của mình."
+          class="round"
+          width="650"
+          height="650"
+        />
+      </div>
+      <div class="food reverse">
+        <img
+          loading="lazy"
+          src="~/assets/images/teachers.webp"
+          alt="Nhiều học sinh và giáo viên ngồi trên sân chơi ĐẬU ĐỖ"
+          class="round"
+          width="800"
+          height="600"
+        />
         <p>
           Các bữa ăn của trẻ được chuyên gia dinh dưỡng, đầu bếp tại hệ thống
           nhà hàng tâm chay đào tạo nên thực đơn cẩn thận. Tâm Chay lựa chọn
@@ -59,9 +115,6 @@
           dùng để nấu ăn, uống được xử lý qua hệ thống lọc nước tạo kiềm TRIM
           ION - máy tạo nước HYDRO.
         </p>
-      </div>
-      <div class="body-right">
-        <img loading="lazy" src="~/assets/images/woodplane.webp" />
       </div>
     </div>
   </main>

@@ -1,6 +1,6 @@
 <template>
   <main v-if="!resources" class="page">
-    <h1 style="text-align: center">Đang tải nội dung...</h1>
+    <h1 style="text-align: center">Đang tải...</h1>
   </main>
   <main v-else class="resources-page page">
     <header class="section-title">
