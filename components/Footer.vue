@@ -24,9 +24,13 @@
         <span>Đường dẫn đến các trang</span>
         <ul class="site-map-links">
           <li><nuxt-link to="/">Trang Chủ</nuxt-link></li>
-          <li><nuxt-link to="/ghi-danh">Tuyển Sinh</nuxt-link></li>
+          <li><nuxt-link to="/tuyen-sinh">Tuyển Sinh</nuxt-link></li>
           <li><nuxt-link to="/gioi-thieu">Giới Thiệu</nuxt-link></li>
-          <li><nuxt-link to="/triet-hoc">Phương Pháp Giáo Dục</nuxt-link></li>
+          <li>
+            <nuxt-link to="/phuong-phap-giao-duc"
+              >Phương Pháp Giáo Dục</nuxt-link
+            >
+          </li>
           <li><nuxt-link to="/tin-tuc">Tin Tức</nuxt-link></li>
           <li>
             <nuxt-link to="/tai-lieu-tham-khao">Tài Liệu Tham Khảo</nuxt-link>

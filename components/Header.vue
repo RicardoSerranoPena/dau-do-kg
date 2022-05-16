@@ -23,13 +23,21 @@
           <nuxt-link to="/gioi-thieu">Giới Thiệu</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/triet-hoc">Phương Pháp Giáo Dục</nuxt-link>
+          <nuxt-link to="/phuong-phap-giao-duc">Phương Pháp Giáo Dục</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/tin-tuc">Tin Tức</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/#apply" class="clr-accent">Tuyển Sinh</nuxt-link>
+          <nuxt-link
+            v-if="$nuxt.$route.path == '/'"
+            to="/#tuyen-sinh"
+            class="clr-accent"
+            >Tuyển Sinh</nuxt-link
+          >
+          <nuxt-link v-else to="/tuyen-sinh" class="clr-accent"
+            >Tuyển Sinh</nuxt-link
+          >
         </li>
       </ul>
     </nav>

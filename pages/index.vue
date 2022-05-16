@@ -93,7 +93,7 @@
             tưởng tượng và sáng tạo kỳ diệu của trẻ.
           </p>
           <p>Ngoài ra, Màu sáp, màu nước, sáp ong, đồ chơi…</p>
-          <nuxt-link to="/triet-hoc" class="btn btn-primary"
+          <nuxt-link to="/phuong-phap-giao-duc" class="btn btn-primary"
             >Learn More</nuxt-link
           >
         </div>
@@ -214,7 +214,7 @@
         >
       </div>
     </section>
-    <section id="apply" class="apply">
+    <section id="tuyen-sinh" class="apply">
       <div class="apply-card hover-animation">
         <div class="apply-img-wrapper">
           <div class="apply-img"></div>
