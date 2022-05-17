@@ -98,7 +98,11 @@
           >
         </div>
         <div class="body-right">
-          <img loading="lazy" src="~/assets/images/woodplane.webp" />
+          <img
+            loading="lazy"
+            src="~/assets/images/woodplane.webp"
+            alt="máy bay đồ chơi trẻ em bằng gỗ"
+          />
         </div>
       </div>
     </section>
@@ -228,7 +232,7 @@
             name="Apply"
             method="POST"
             netlify-honeypot="bot-field"
-            action="/apply/success"
+            action="/tuyen-sinh/thanh-cong"
           >
             <p class="hidden">
               <label>
@@ -267,6 +271,7 @@
               oninvalid="this.setCustomValidity('Vui lòng nhập tuổi của học sinh')"
               oninput="setCustomValidity('')"
               maxlength="1"
+              minlength="1"
               required
             />
             <label for="email">Email</label>

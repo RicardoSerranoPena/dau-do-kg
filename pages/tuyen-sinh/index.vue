@@ -14,7 +14,7 @@
             name="Apply"
             method="POST"
             netlify-honeypot="bot-field"
-            action="/apply/success"
+            action="/tuyen-sinh/thanh-cong"
           >
             <p class="hidden">
               <label>
@@ -130,7 +130,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: `https://daudohouse.com/apply`,
+          content: `https://daudohouse.com/tuyen-sinh`,
         },
       ],
     }

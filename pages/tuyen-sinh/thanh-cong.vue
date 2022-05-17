@@ -40,7 +40,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: `https://daudohouse.com/success`,
+          content: `https://daudohouse.com/tuyen-sinh/thanh-cong`,
         },
       ],
     }
