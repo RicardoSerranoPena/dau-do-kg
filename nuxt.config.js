@@ -27,6 +27,12 @@ export default {
       },
 
       {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Trường mầm non thuần chay đầu tiên tại Hà Nội, với đội ngũ giáo viên đầu tiên tràn đầy tình yêu thương dành cho các bé.',
+      },
+      {
         hid: 'og:description',
         name: 'og:description',
         content:
@@ -145,6 +151,21 @@ export default {
       },
     ],
     link: [{ rel: 'manifest', href: '/manifest.json' }],
+    link: [{ rel: 'preload', as: 'image', href: '/kids-eating.webp' }],
+    link: [{ rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    link: [
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: 'true',
+      },
+    ],
+    link: [
+      {
+        href: 'https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap',
+        rel: 'stylesheet',
+      },
+    ],
   },
 
   // For rendering error page

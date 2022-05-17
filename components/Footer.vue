@@ -1,8 +1,22 @@
 <template>
   <footer>
     <div class="footer">
-      <img class="footer-logo" src="~/assets/images/Title-logo.webp" />
-      <img class="footer-logo-full" src="~/assets/images/ddhk-logo.webp" />
+      <img
+        loading="lazy"
+        class="footer-logo"
+        src="~/assets/images/Title-logo.webp"
+        alt="Đậu Đỗ logo"
+        width="413"
+        height="84"
+      />
+      <img
+        loading="lazy"
+        class="footer-logo-full"
+        src="~/assets/images/ddhk-logo.webp"
+        alt="Đậu Đỗ logo"
+        width="500"
+        height="500"
+      />
       <div class="footer-contact-us">
         <span>Địa chỉ</span>
         <!-- <img src="~/assets/images/map-marker-solid.svg" /> -->

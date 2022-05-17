@@ -65,14 +65,14 @@
             trường và...
           </p>
           <nuxt-link to="/gioi-thieu" class="btn btn-primary"
-            >Learn More</nuxt-link
+            >Tiếp Tục Đọc Phần Giới Thiệu</nuxt-link
           >
         </div>
         <div class="body-right">
           <img
             loading="lazy"
             class="figure-hover-animation"
-            src="~/assets/images/kids-eating.webp"
+            src="/kids-eating.webp"
           />
         </div>
       </div>
@@ -94,7 +94,7 @@
           </p>
           <p>Ngoài ra, Màu sáp, màu nước, sáp ong, đồ chơi…</p>
           <nuxt-link to="/phuong-phap-giao-duc" class="btn btn-primary"
-            >Learn More</nuxt-link
+            >Tiếp Tục Đọc Phương Pháp Giáo Dục</nuxt-link
           >
         </div>
         <div class="body-right">
@@ -112,8 +112,8 @@
             <div class="testimonial-img-wrapper">
               <div loading="lazy" class="testimonial-img"></div>
             </div>
-            <h4 class="testimonial-name">Đỗ Thị Thoa</h4>
-            <p class="testimonial-role">Parent</p>
+            <p class="testimonial-name">Đỗ Thị Thoa</p>
+            <p class="testimonial-role">Phụ Huynh</p>
             <p class="testimonial-quote">
               Cupcake ipsum dolor sit amet muffin. Tiramisu dessert wafer
               gummies chocolate cake pastry chocolate bar soufflé. Jujubes cake
@@ -124,8 +124,8 @@
             <div class="testimonial-img-wrapper">
               <div class="testimonial-img"></div>
             </div>
-            <h4 class="testimonial-name">Mai Khánh Linh</h4>
-            <p class="testimonial-role">Quản Lý tại trường</p>
+            <p class="testimonial-name">Mai Khánh Linh</p>
+            <p class="testimonial-role">Quản Lý Tại Trường</p>
             <p class="testimonial-quote">
               “Tôi có một tâm huyết vô cùng lớn trong lĩnh vực giáo dục trẻ em
               mong muốn mang lại cho các con một ngôi trường yêu thương, ở đó
@@ -140,7 +140,7 @@
             <div class="testimonial-img-wrapper">
               <div class="testimonial-img"></div>
             </div>
-            <h4 class="testimonial-name">Name Lastname</h4>
+            <p class="testimonial-name">Name Lastname</p>
             <p class="testimonial-role">Major</p>
             <p class="testimonial-quote">
               Cupcake ipsum dolor sit amet muffin. Tiramisu dessert wafer
@@ -176,12 +176,12 @@
               {{ newsletter.description }}
             </p>
             <nuxt-link :to="'/tin-tuc/' + newsletter.slug"
-              >Keep Reading &#8594;</nuxt-link
+              >Hãy Đọc Tiếp &#8594;</nuxt-link
             >
           </div>
         </div>
         <nuxt-link to="/tin-tuc" class="btn btn-primary"
-          >Read More News</nuxt-link
+          >Đọc Thêm Tin Tức</nuxt-link
         >
       </div>
       <div class="resources">
@@ -210,7 +210,7 @@
           </nuxt-link>
         </div>
         <nuxt-link to="/tai-lieu-tham-khao" class="btn btn-secondary"
-          >Get More Resources</nuxt-link
+          >Nhận Thêm Tài Liệu Tham Khảo</nuxt-link
         >
       </div>
     </section>

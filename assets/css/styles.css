@@ -36,7 +36,7 @@
 
   /* fonts */
   --ff-title: ;
-  --ff-sans: 'Montserrat', sans-serif;
+  --ff-sans: 'Be Vietnam Pro', sans-serif;
 
   /* effects */
   --bx-shadow-hover: 0px 6px 6px 0px rgba(0, 0, 0, 0.3);
@@ -467,6 +467,7 @@ footer {
 
 .footer-logo,
 .footer-logo-full {
+  height: auto;
   max-width: 15rem;
   margin: 1rem auto;
   padding: 0;
@@ -626,7 +627,7 @@ form.subscribe #subscribe-button {
 .hero {
   height: 95vh;
   background-color: #bababa;
-  background-image: url(~/assets/images/kids-eating.webp);
+  background-image: url(/kids-eating.webp);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
@@ -694,6 +695,7 @@ form.subscribe #subscribe-button {
 
 .card-body {
   padding: 1rem;
+  line-height: 1.4em;
 }
 
 .card-img-wrapper {
@@ -730,6 +732,11 @@ form.subscribe #subscribe-button {
 .our-philosophy,
 .apply {
   padding: clamp(1em, 0.5em + 7vw, 3em) clamp(1em, 0.5em + 7vw, 5em);
+}
+
+.about-us,
+.our-philosophy {
+  line-height: 1.5em;
 }
 
 .about-us .section-title {
@@ -816,6 +823,7 @@ form.subscribe #subscribe-button {
 
 .testimonial-name {
   margin: 0.5em 0;
+  font-weight: 600;
 }
 
 .testimonial-role {
@@ -825,6 +833,7 @@ form.subscribe #subscribe-button {
 
 .testimonial-quote {
   margin: 1em 0.25em;
+  line-height: 1.5em;
 }
 
 .newsletter-resources {
@@ -1503,9 +1512,14 @@ img.xsmall {
     gap: clamp(1rem, 0.5rem + 4vh, 4rem);
   }
 
-  .philosophy-page div.reverse {
-    direction: rtl;
-    text-align: left;
+  .philosophy-page div.reverse img {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .philosophy-page div.reverse p {
+    grid-column: 2 / 3;
+    grid-row: 1;
   }
 
   .philosophy-page img {

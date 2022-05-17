@@ -83,7 +83,7 @@
         <img
           loading="lazy"
           class="figure-hover-animation"
-          src="~/assets/images/kids-eating.webp"
+          src="/kids-eating.webp"
         />
       </div>
     </div>
@@ -91,7 +91,43 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      title: 'Giới Thiệu Đậu Đỗ House',
+      description:
+        'Trường Mầm non Đậu Đỗ House - Đỗ Đức Dục trả trẻ con về thế giới giao tiếp từ trái tim và sống chan hòa cùng tự nhiên, đưa các con về giá trị sống cốt lõi là sống với lòng yêu thương chan hoà. Tạo môi trường và được nâng đỡ, khuyến khích con vượt qua nhiều thách thức, được tôn trọng tự trải nghiệm để học hỏi mỗi ngày.',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      description: this.description,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description,
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.title,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.description,
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: `https://daudohouse.com/gioi-thieu`,
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style></style>

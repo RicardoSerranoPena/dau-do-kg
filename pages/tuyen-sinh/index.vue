@@ -113,6 +113,11 @@ export default {
       description: this.description,
       meta: [
         {
+          hid: 'description',
+          name: 'description',
+          content: this.description,
+        },
+        {
           hid: 'og:title',
           name: 'og:title',
           content: this.title,

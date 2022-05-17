@@ -121,7 +121,43 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      title: 'Phương Pháp Giáo Dục Đậu Đỗ House',
+      description:
+        'Chương trình học được thiết kế cẩn thận bài bản theo đặc điểm tâm lý trẻ và có nhịp điệu nhằm giúp trẻ cân bằng, hài hòa với môi trường sống, nuôi dưỡng ý chí. Trẻ được tạo cơ hội để tự làm mọi việc, được lựa chọn mình khám phá gì?, được tạo môi trường và được nâng đỡ, khuyến khích con vượt qua nhiều thách thức, được tôn trọng tự trải nghiệm để học hỏi mỗi ngày.',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      description: this.description,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description,
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.title,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.description,
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: `https://daudohouse.com/phuong-phap-giao-duc`,
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style></style>

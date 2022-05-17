@@ -4,11 +4,13 @@
       class="btn-contact"
       aria-controls="contact-links"
       aria-expanded="false"
+      aria-label="Liên hệ Đậu Đỗ"
       @click="toggleContactLinks"
     ></button>
     <div id="contact-links" class="contact-links">
       <a href="tel:0965160004" target="_blank">
         <img
+          loading="lazy"
           src="~/assets/images/phone-alt-solid-light.svg"
           alt="Biểu tượng điện thoại"
           class="phone-svg"
@@ -18,6 +20,7 @@
       </a>
       <a href="mailto:mndaudohouse@gmail.com" target="_blank">
         <img
+          loading="lazy"
           src="~/assets/images/envelope-solid-light.svg"
           alt="Biểu tượng email"
           class=""
@@ -27,6 +30,7 @@
       </a>
       <a href="https://chat.zalo.me/?phone=0965160004" target="_blank"
         ><img
+          loading="lazy"
           src="~/assets/images/zalo-logo.webp"
           alt="zalo logo"
           class="round"
@@ -35,6 +39,7 @@
       /></a>
       <a href="https://www.facebook.com/daudohouse.preschool" target="_blank"
         ><img
+          loading="lazy"
           src="~/assets/images/fb-logo.webp"
           alt="facebook logo"
           class="round"
