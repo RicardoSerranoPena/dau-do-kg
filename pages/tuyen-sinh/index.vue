@@ -7,7 +7,7 @@
         </div>
         <div class="apply-form">
           <header>
-            <h2 class="form-title">Enroll Today</h2>
+            <h2 class="form-title">Đăng ký ngay để nhận tư vấn</h2>
           </header>
           <form
             netlify

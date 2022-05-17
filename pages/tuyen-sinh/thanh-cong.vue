@@ -2,8 +2,8 @@
   <main class="page">
     <div class="success-message">
       <p>
-        Form was successly submited. Wait for us to contact you for the next
-        step in this process.
+        Biểu mẫu đã được gửi thành công. Chờ chúng tôi liên hệ với bạn để thực
+        hiện bước tiếp theo trong quy trình này.
       </p>
     </div>
   </main>
