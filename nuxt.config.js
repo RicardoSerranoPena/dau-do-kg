@@ -152,20 +152,6 @@ export default {
     ],
     link: [{ rel: 'manifest', href: '/manifest.json' }],
     link: [{ rel: 'preload', as: 'image', href: '/kids-eating.webp' }],
-    link: [{ rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
-    link: [
-      {
-        rel: 'preconnect',
-        href: 'https://fonts.gstatic.com',
-        crossorigin: 'true',
-      },
-    ],
-    link: [
-      {
-        href: 'https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap',
-        rel: 'stylesheet',
-      },
-    ],
   },
 
   // For rendering error page
@@ -183,7 +169,20 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: ['@nuxtjs/google-fonts'],
+
+  // Google Fonts Config
+  googleFonts: {
+    families: {
+      'Be Vietnam Pro': [400, 600],
+    },
+    display: 'swap',
+    prefetch: false,
+    preconnect: false,
+    preload: false,
+    download: true,
+    base64: false,
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/apollo', '@nuxtjs/robots', '@nuxtjs/sitemap'],
