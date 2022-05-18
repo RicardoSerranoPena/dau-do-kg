@@ -152,7 +152,6 @@ export default {
     ],
     link: [{ rel: 'manifest', href: '/manifest.json' }],
     link: [{ rel: 'preload', as: 'image', href: '/kids-eating.webp' }],
-    link: [{ rel: 'preload', as: 'style', href: 'critical.css' }],
   },
 
   // For rendering error page
