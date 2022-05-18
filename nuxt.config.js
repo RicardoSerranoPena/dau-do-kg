@@ -152,6 +152,7 @@ export default {
     ],
     link: [{ rel: 'manifest', href: '/manifest.json' }],
     link: [{ rel: 'preload', as: 'image', href: '/kids-eating.webp' }],
+    link: [{ rel: 'preload', as: 'style', href: 'critical.css' }],
   },
 
   // For rendering error page
@@ -160,7 +161,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/css/styles.css'],
+  css: ['~/assets/css/critical.css', '~/assets/css/styles.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
