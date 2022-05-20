@@ -73,6 +73,9 @@
             loading="lazy"
             class="figure-hover-animation"
             src="/kids-eating.webp"
+            alt="Trẻ em chơi với bột ở Đậu Đỗ House"
+            width="400"
+            height="533.328"
           />
         </div>
       </div>
@@ -102,6 +105,8 @@
             loading="lazy"
             src="~/assets/images/woodplane.webp"
             alt="máy bay đồ chơi trẻ em bằng gỗ"
+            width="300"
+            height="230"
           />
         </div>
       </div>
