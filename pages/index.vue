@@ -121,12 +121,13 @@
             <div class="testimonial-img-wrapper">
               <div loading="lazy" class="testimonial-img"></div>
             </div>
-            <p class="testimonial-name">Đỗ Thị Thoa</p>
+            <p class="testimonial-name">Chu Thanh Nhàn</p>
             <p class="testimonial-role">Phụ Huynh</p>
             <p class="testimonial-quote">
-              Cupcake ipsum dolor sit amet muffin. Tiramisu dessert wafer
-              gummies chocolate cake pastry chocolate bar soufflé. Jujubes cake
-              tiramisu sweet roll chocolate.
+              Mình thực sự cảm thấy may mắn khi chọn đúng trường cho con. Con
+              được vui chơi, yêu thương, khám phá. Các cô còn viết lại nhật ký
+              cho con. Mong con trai sẽ đi cùng Đậu Đỗ đến hết 5 tuổi để có 1
+              tuổi thơ trọn vẹn.
             </p>
           </div>
           <div class="card testimonial-card">
@@ -149,12 +150,12 @@
             <div class="testimonial-img-wrapper">
               <div class="testimonial-img"></div>
             </div>
-            <p class="testimonial-name">Name Lastname</p>
-            <p class="testimonial-role">Major</p>
+            <p class="testimonial-name">Mai Xin Hiêng</p>
+            <p class="testimonial-role">Phụ Huynh</p>
             <p class="testimonial-quote">
-              Cupcake ipsum dolor sit amet muffin. Tiramisu dessert wafer
-              gummies chocolate cake pastry chocolate bar soufflé. Jujubes cake
-              tiramisu sweet roll chocolate.
+              Trường cơ sở vật chất chất lương , các cô nhẹ nhàng và rất yêu các
+              bé , đặc biệt thích nhất khoản khi một bé mới đến sẽ có 1 cô chăm
+              sóc riêng trong nhưng tuần đầu đi học ạ
             </p>
           </div>
         </div>

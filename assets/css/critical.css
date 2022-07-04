@@ -390,10 +390,10 @@ img.phone-svg {
   text-align: center;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
   .hero {
-    background-image: url(~/assets/images/daodo-circle.webp);
-    background-position: bottom;
+    background-image: url(~/assets/images/kids-hero.webp);
+    background-position: center 30%;
   }
 }
 

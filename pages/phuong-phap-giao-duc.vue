@@ -100,7 +100,7 @@
       <div class="food reverse">
         <img
           loading="lazy"
-          src="~/assets/images/teachers.webp"
+          src="~/assets/images/children.webp"
           alt="Nhiều học sinh và giáo viên ngồi trên sân chơi ĐẬU ĐỖ"
           class="round"
           width="800"

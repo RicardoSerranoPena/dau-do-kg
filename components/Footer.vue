@@ -20,7 +20,7 @@
       <div class="footer-contact-us">
         <span>Địa chỉ</span>
         <!-- <img src="~/assets/images/map-marker-solid.svg" /> -->
-        <a href="https://goo.gl/maps/GixGi8GJ12C5Hrdv9"
+        <a href="https://goo.gl/maps/GixGi8GJ12C5Hrdv9" target="_blank"
           >Ngõ 4 Đỗ Đức Dục, Mễ Trì, Hà Nội, Vietnam</a
         >
         <span>Hotline</span>
@@ -31,7 +31,9 @@
         <!-- <img src="~/assets/images/envelope-solid-dark.svg" /> -->
         <a href="mailto:mndaudohouse@gmail.com">mndaudohouse@gmail.com</a>
         <span>Website</span>
-        <a href="https://daudohouse.com">https://daudohouse.com</a>
+        <nuxt-link to="https://daudohouse.com"
+          >https://daudohouse.com</nuxt-link
+        >
       </div>
 
       <div class="footer-site-map">
