@@ -169,9 +169,15 @@ textarea {
 
 input,
 textarea {
+  font-family: 'Be Vietnam Pro', Tahoma, Arial, sans-serif;
   font-size: 1rem;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
-  font-weight: lighter;
+  font-weight: normal;
+}
+
+::placeholder {
+  opacity: 0.75;
+  color: var(--clr-text-dark);
 }
 
 .form-group {
