@@ -86,8 +86,8 @@ h1 {
 
 h2,
 h3 {
-  font-size: 2rem;
-  font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
+  font-size: 1.9rem;
+  font-size: clamp(1.9rem, 1.8rem + 1vw, 2.5rem);
 }
 
 p {

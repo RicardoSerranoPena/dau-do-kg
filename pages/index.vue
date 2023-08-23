@@ -52,17 +52,17 @@
       <div class="section-body">
         <div class="body-left">
           <p>
-            Trường mần non Đậu Đỗ House được thành lập vào tháng 1/4/2019 do một
-            nhóm các nhà giáo dục tâm huyết trong lĩnh vực giáo dục trẻ kết hợp
-            với hệ thống nhà hàng Tâm Chay theo phương pháp giáo dục thuận tự
-            nhiên, mong muốn xây dựng một ngôi trường hạnh phúc, ở đó trẻ được
-            an toàn, yêu thương, tự do sáng tạo, gần gũi với thiên nhiên.
+            Nhà trường mong muốn cùng bố mẹ nuôi dưỡng những em bé hạnh phúc, tự
+            do, có sức mạnh nội tại, an nhiên là chính mình. Ở Đậu Đỗ, các con
+            được tôn trọng, thoải mái, ấm áp như ở nhà, mỗi trẻ đều được tạo
+            không gian để tự do khai phá, phát huy tiềm năng của mình.
           </p>
           <p>
-            Trường Mầm non Đậu Đỗ House - Đỗ Đức Dục trả trẻ con về thế giới
-            giao tiếp từ trái tim và sống chan hòa cùng tự nhiên, đưa các con về
-            giá trị sống cốt lõi là sống với lòng yêu thương chan hoà. Tạo môi
-            trường và...
+            Chương trình học được thiết kế cẩn thận theo nhịp điệu nhằm giúp trẻ
+            cân bằng, hài hòa với môi trường, nuôi dưỡng ý chí, rèn luyện và
+            phát triển kỹ năng sống, khơi dậy và phát huy lòng yêu thương của
+            trẻ. Trẻ được tạo cơ hội để tự làm mọi việc, được tạo môi trường và
+            giá trị sống cốt lõi là sống với lòng yêu thương chan hoà...
           </p>
           <nuxt-link to="/gioi-thieu" class="btn btn-primary"
             >Tiếp Tục Đọc Phần Giới Thiệu</nuxt-link
@@ -224,7 +224,8 @@
         >
       </div>
     </section>
-    <section id="tuyen-sinh" class="apply">
+    <section></section>
+    <section id="tuyen-sinh" class="apply" style="display: none">
       <div class="apply-card hover-animation">
         <div class="apply-img-wrapper">
           <div class="apply-img"></div>

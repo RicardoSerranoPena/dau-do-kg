@@ -26,6 +26,7 @@
   "devDependencies": {
     "@nuxtjs/google-fonts": "^2.0.0",
     "eslint-config-prettier": "^8.7.0",
-    "prettier": "^2.8.4"
+    "prettier": "^2.8.4",
+    "@vue/runtime-dom": "latest"
   }
 }

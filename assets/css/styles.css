@@ -993,7 +993,9 @@ img.newsletter-hero {
   ------------------------------*/
 
 .philosophy-page,
-.about-us-page {
+.about-us-page,
+.information-page,
+.sign-up-page {
   padding-inline: clamp(1rem, 0.3rem + 5vw, 5rem);
 }
 
@@ -1008,7 +1010,9 @@ img.newsletter-hero {
   margin-block: clamp(2rem, 1rem + 2vh, 4rem);
 }
 
-.philosophy-page .section-body {
+.philosophy-page .section-body,
+.information-page .section-body,
+.sign-up-page .section-body {
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 1rem + 2vh, 4rem);

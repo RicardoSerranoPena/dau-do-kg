@@ -26,18 +26,19 @@
           <nuxt-link to="/phuong-phap-giao-duc">Phương Pháp Giáo Dục</nuxt-link>
         </li>
         <li>
+          <nuxt-link to="/thong-tin-chi-tiet">Thông Tin Chi Tiết</nuxt-link>
+        </li>
+        <li>
           <nuxt-link to="/tin-tuc">Tin Tức</nuxt-link>
         </li>
         <li>
-          <nuxt-link
+          <!-- <nuxt-link
             v-if="$nuxt.$route.path == '/'"
             to="/#tuyen-sinh"
             class="clr-accent"
             >Tuyển Sinh</nuxt-link
-          >
-          <nuxt-link v-else to="/tuyen-sinh" class="clr-accent"
-            >Tuyển Sinh</nuxt-link
-          >
+          > -->
+          <nuxt-link to="/tuyen-sinh" class="clr-accent">Tuyển Sinh</nuxt-link>
         </li>
       </ul>
     </nav>

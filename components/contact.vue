@@ -8,7 +8,7 @@
       @click="toggleContactLinks"
     ></button>
     <div id="contact-links" class="contact-links">
-      <a href="tel:0965160004" target="_blank">
+      <a href="tel:0869169302" target="_blank">
         <img
           loading="lazy"
           src="~/assets/images/phone-alt-solid-light.svg"
