@@ -1,101 +1,46 @@
 <template>
-  <main class="page">
-    <section id="apply" class="apply">
-      <div class="apply-card hover-animation">
-        <div class="apply-img-wrapper">
-          <div class="apply-img"></div>
-        </div>
-        <div class="apply-form">
-          <header>
-            <h2 class="form-title">Đăng ký ngay để nhận tư vấn</h2>
-          </header>
-          <form
-            netlify
-            name="Apply"
-            method="POST"
-            netlify-honeypot="bot-field"
-            action="/tuyen-sinh/thanh-cong"
-          >
-            <p class="hidden">
-              <label>
-                Don't fill this out if you're a human:
-                <input name="bot-field" />
-              </label>
-            </p>
-            <label for="parent-name">Họ tên Phụ huynh</label>
-            <input
-              type="text"
-              id="parent-name"
-              name="parent-name"
-              placeholder="Họ tên Phụ huynh"
-              oninvalid="this.setCustomValidity('Vui lòng nhập tên phụ huynh')"
-              oninput="setCustomValidity('')"
-              maxlength="50"
-              required
-            />
-            <label for="student-name">Họ tên Học sinh</label>
-            <input
-              type="text"
-              id="student-name"
-              name="student-name"
-              placeholder="Họ tên Học sinh"
-              oninvalid="this.setCustomValidity('Vui lòng nhập tên học sinh')"
-              oninput="setCustomValidity('')"
-              maxlength="50"
-              required
-            />
-            <label for="age">Tuổi học sinh</label>
-            <input
-              type="number"
-              id="age"
-              name="age"
-              placeholder="Tuổi học sinh"
-              oninvalid="this.setCustomValidity('Vui lòng nhập tuổi của học sinh')"
-              oninput="setCustomValidity('')"
-              maxlength="1"
-              required
-            />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Địa chỉ Email"
-              oninvalid="this.setCustomValidity('Vui lòng nhập email của bạn')"
-              oninput="setCustomValidity('')"
-              maxlength="320"
-              required
-            />
-            <label for="phone">Số điện thoại</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Số điện thoại"
-              oninvalid="this.setCustomValidity('Vui lòng điền số điện thoại của bạn')"
-              oninput="setCustomValidity('')"
-              maxlength="12"
-              required
-            />
-            <label for="message">Tin nhắn</label>
-            <textarea
-              type="text"
-              id="message"
-              name="message"
-              placeholder="Lời nhắn đến Đậu Đỗ"
-              maxlength="500"
-              rows="4"
-            />
-            <input
-              type="submit"
-              value="Nộp đơn"
-              class="btn-form btn-secondary"
-            />
-            <input type="hidden" name="form-name" value="Apply" />
-          </form>
-        </div>
-      </div>
-    </section>
+  <main class="page sign-up-page">
+    <header class="section-title">
+      <h1>Cách Thức Tuyển Sinh</h1>
+    </header>
+
+    <div class="section-body">
+      <p>
+        Các bố mẹ có nhu cầu đăng kí học cho con vui lòng liên hệ cho Đậu Đỗ qua
+        fanpage Đậu Đỗ House hoặc Zalo, cho Đậu Đỗ biết một số thông tin:
+        <br />
+        Với bé từ 18 tháng tuổi - 3 tuổi : bé có ăn chay không? bé bao nhiêu
+        tuổi? bé đã có khả năng nói, tự ăn, đi đứng chưa ? bé ăn được cơm chưa ?
+        thói quen ngủ của bé ? bé đã đi lớp bao giờ chưa ? ...<br />
+        Với bé trên 3 tuổi : bé có tự đi vệ sinh được chưa ? có giúp đỡ bố mẹ
+        việc nhà không ? thói quen ăn và ngủ của bé ? ...
+      </p>
+      <p>
+        -Sau khi nói chuyện và xin các bố mẹ một số thông tin, các cô sẽ gửi cho
+        bố mẹ số tài khoản của trường, các bố mẹ vui lòng chuyển khoản phí giữ
+        chỗ là 3,000,000 VNĐ. <br />
+        - Đăng kí học thành công chỉ sau khi trường nhận được xác nhận chuyển
+        khoản phí giữ chỗ. 3 ngày sau khi các cô gửi số tài khoản cho bố mẹ mà
+        vẫn chưa nhận được xác nhận chuyển khoản, đăng kí học được coi như là
+        chưa thành công.<br />
+        - Sau khi đăng kí học thành công, các bố mẹ đăng kí với trường ngày con
+        chính thức đi học, các cô sẽ hướng dẫn các bố mẹ chuẩn bị tâm lý cho trẻ
+        trước khi đi học và làm quen với trường.
+        <br />
+      </p>
+      <p>
+        - Các bố mẹ đăng kí học thành công đợt tuyển sinh, khi đăng kí thời gian
+        tham quan trường (qua page Đậu Đỗ House hoặc Zalo ), các cô sẽ sắp xếp
+        lịch và báo lại thời gian phù hợp để các bố mẹ qua tham quan trường.
+        Trường sẽ không tiếp phụ huynh qua tham quan khi chưa đăng kí lịch trước
+        để tránh ảnh hưởng đến bầu không khí an lành của trẻ.
+      </p>
+      <p>
+        Lưu ý': để hỗ trợ tâm lý của con khi sắp bước vào môi trường mới, phụ
+        huynh cho con đến trường trải nghiệm trước 1 vài ngày trong khoảng thời
+        gian từ 16h30 đến 17h30.
+      </p>
+    </div>
   </main>
 </template>
 

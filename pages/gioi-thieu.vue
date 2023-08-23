@@ -7,19 +7,63 @@
     <div class="section-body">
       <div class="body-left">
         <p>
-          Trường mần non Đậu Đỗ House được thành lập vào tháng 1/4/2019 do một
-          nhóm các nhà giáo dục tâm huyết trong lĩnh vực giáo dục trẻ kết hợp
-          với hệ thống nhà hàng Tâm Chay theo phương pháp giáo dục thuận tự
-          nhiên, mong muốn xây dựng một ngôi trường hạnh phúc, ở đó trẻ được an
-          toàn, yêu thương, tự do sáng tạo, gần gũi với thiên nhiên.
+          Trường Mầm non Đậu Đỗ House - Đỗ Đức Dục nằm ở khu vực Mễ Trì, dành
+          cho bé từ 18 tháng đến 5 tuổi.
         </p>
         <p>
-          Trường Mầm non Đậu Đỗ House - Đỗ Đức Dục trả trẻ con về thế giới giao
-          tiếp từ trái tim và sống chan hòa cùng tự nhiên, đưa các con về giá
-          trị sống cốt lõi là sống với lòng yêu thương chan hoà. Tạo môi trường
-          và được nâng đỡ, khuyến khích con vượt qua nhiều thách thức, được tôn
-          trọng tự trải nghiệm để học hỏi mỗi ngày.
+          Nhà trường mong muốn cùng bố mẹ nuôi dưỡng những em bé hạnh phúc, tự
+          do, có sức mạnh nội tại, an nhiên là chính mình. Ở Đậu Đỗ, các con
+          được tôn trọng, thoải mái, ấm áp như ở nhà, mỗi trẻ đều được tạo không
+          gian để tự do khai phá, phát huy tiềm năng của mình.
         </p>
+        <p>
+          Chương trình học được thiết kế cẩn thận theo nhịp điệu nhằm giúp trẻ
+          cân bằng, hài hòa với môi trường, nuôi dưỡng ý chí, rèn luyện và phát
+          triển kỹ năng sống, khơi dậy và phát huy lòng yêu thương của trẻ. Trẻ
+          được tạo cơ hội để tự làm mọi việc, được tạo môi trường và được cổ vũ
+          vượt qua những khó khăn, thách thức. Đều đặn vào đầu mỗi sáng, các con
+          luôn được “tắm” dưới ánh mặt trời mới lên với những trải nghiệm trong
+          không gian rộng rãi, xanh thoáng, thuận tự nhiên như tưới nước cho cây
+          xanh, cho cá ăn, hoạt động ở công viên, đùa vui ở sân cát, sân sỏi,
+          ... Ở Đậu Đỗ, các con được tiếp xúc với giáo viên nước ngoài, học
+          tiếng Anh theo phương pháp mới, tiếp thu một cách tự nhiên nhất và
+          hiệu quả nhất, làm nền tảng vững chắc để phát triển ngôn ngữ tiếng Anh
+          sau này. Theo tháng/quý các con được trải nghiệm thăm quan, dã ngoại
+          cùng gia đình và bạn bè.
+        </p>
+        <p>
+          Đội ngũ giáo viên là tài sản vô giá nhất của trường, Trường Mầm non
+          Đậu Đỗ House - Đỗ Đức Dục cố gắng tạo ra môi trường mà các cô được là
+          chính mình, hạnh phúc và được học hỏi, phát triển bản thân. Bởi người
+          giáo viên biết chăm sóc bản thân, có tấm lòng nhân ái sẽ đem đến một
+          môi trường an toàn và giàu tình yêu thương cho con trẻ.
+        </p>
+        <p>
+          Các bữa ăn của trẻ được tuyển chọn thực phẩm, sơ chế, chế biến hoàn
+          toàn bởi nhà bếp Đậu Đỗ với thực đơn THUẦN CHAY. Nhà bếp tự làm sữa
+          hạt từ các loại hạt an toàn nhiều dinh dưỡng; không sử dụng các loại
+          gia vị công nghiệp… Toàn bộ nguồn nước dùng để nấu ăn, uống được xử lý
+          qua hệ thống lọc nước theo công nghệ R.O thử nghiệm an toàn.
+        </p>
+        <h4>CƠ SỞ VẬT CHẤT:</h4>
+        <ol>
+          <li>Camera</li>
+          <li>
+            Sân chơi ngoài trời: bể cá, sân sỏi, sân cát, công viên, vườn cây.
+          </li>
+          <li>Sân chơi, lớp học trong nhà: Phòng học : 50 - 60m2</li>
+        </ol>
+        <ul>
+          <li>
+            Đầy đủ trang thiết bị hiện đại để chăm sóc giảng dạy: điều hòa, máy
+            chiếu, chăn đệm, giá góc, ...
+          </li>
+          <li>
+            Đồ dùng và đồ chơi sáng tạo, nhiều đồ handmade do chính các cô tâm
+            huyết sáng tạo, truyền cảm hứng cho trẻ
+          </li>
+        </ul>
+
         <div class="timeline">
           <div class="line l1"></div>
           <div class="dl dl1">

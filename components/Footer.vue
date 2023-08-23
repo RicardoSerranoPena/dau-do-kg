@@ -25,15 +25,13 @@
         >
         <span>Hotline</span>
         <!-- <img src="~/assets/images/phone-alt-solid-dark.svg" /> -->
-        <a href="tel:0965160004">(096) 516.0004</a>
+        <a href="tel:0869169302">(086) 916.9302</a>
 
         <span>Email</span>
         <!-- <img src="~/assets/images/envelope-solid-dark.svg" /> -->
         <a href="mailto:mndaudohouse@gmail.com">mndaudohouse@gmail.com</a>
         <span>Website</span>
-        <nuxt-link to="https://daudohouse.com"
-          >https://daudohouse.com</nuxt-link
-        >
+        <a href="https://daudohouse.com">https://daudohouse.com</a>
       </div>
 
       <div class="footer-site-map">
@@ -47,6 +45,9 @@
               >Phương Pháp Giáo Dục</nuxt-link
             >
           </li>
+          <li>
+            <nuxt-link to="/thong-tin-chi-tiet">Thông Tin Chi Tiết</nuxt-link>
+          </li>
           <li><nuxt-link to="/tin-tuc">Tin Tức</nuxt-link></li>
           <li>
             <nuxt-link to="/tai-lieu-tham-khao">Tài Liệu Tham Khảo</nuxt-link>
@@ -57,7 +58,7 @@
       <div class="footer-social-media">
         <span>Kết nối với nhà trường</span>
         <div class="social-media">
-          <a href="tel:0965160004" target="_blank">
+          <a href="tel:0869169302" target="_blank">
             <img
               loading="lazy"
               src="~/assets/images/phone-alt-solid-dark.svg"
@@ -81,7 +82,7 @@
               height="40"
             />
           </a>
-          <a href="https://chat.zalo.me/?phone=0965160004" target="_blank"
+          <a href="https://chat.zalo.me/?phone=0869169302" target="_blank"
             ><img
               loading="lazy"
               src="~/assets/images/zalo-logo.webp"
