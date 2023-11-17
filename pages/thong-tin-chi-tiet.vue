@@ -63,16 +63,7 @@
         bước vào lớp 1.
       </p>
 
-      <h2>2. Đội ngũ giáo viên:</h2>
-      <p>
-        Đội ngũ giáo viên là tài sản vô giá nhất của trường, Mầm non Đậu Đỗ cố
-        gắng tạo ra môi trường mà các cô được là chính mình, hạnh phúc và được
-        học hỏi, phát triển bản thân. Bởi người giáo viên chăm sóc bản thân, có
-        tấm lòng nhân ái sẽ đem đến một môi trường an toàn, giàu tình yêu thương
-        cho con trẻ.
-      </p>
-
-      <h2>3. Chế độ dinh dưỡng:</h2>
+      <h2>2. Chế độ dinh dưỡng:</h2>
       <p>
         Các bữa ăn của trẻ được tuyển chọn thực phẩm, sơ chế, chế biến hoàn toàn
         bởi nhà bếp Đậu Đỗ với thực đơn THUẦN CHAY. Thực đơn đa dạng theo từng
@@ -85,7 +76,7 @@
         công nghệ R.O thử nghiệm an toàn.
       </p>
 
-      <h2>4. Phí học tại trường:</h2>
+      <h2>3. Phí học tại trường:</h2>
       <ul>
         <li>Học phí: 2,900,000 VNĐ/ tháng (Trẻ học từ thứ 2 đến thứ 6)</li>
         <li>
@@ -112,11 +103,16 @@
         <br />
         💝 Miễn phí xây dựng trường.
         <br />
+        <br />
         * Lớp trông muộn từ 17h45 - 18h: 15,000 VNĐ / 15 phút. Lớp trông muộn
         sau 18h: 50,000 VNĐ/ buổi (Khuyến khích ba mẹ đón bé đúng giờ)
+        <br />
+        <br />
+        Phí gửi thêm thứ 7: 260,000 VNĐ / ngày; 130,000 VNĐ / nửa ngày (đến 12h
+        trưa); 200,000 VNĐ/ ngày nếu đk theo tháng.
       </p>
 
-      <h2>5. Chính sách</h2>
+      <h2>4. Chính sách</h2>
       <ul>
         <li>
           Giảm 20% học phí hàng tháng cho bé có anh/chị đang học tại trường Đậu

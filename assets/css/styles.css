@@ -963,6 +963,41 @@ img.newsletter-hero {
 }
 
 /*--------------
+  Sign-Up Page 
+  --------------*/
+
+.sign-up-page img {
+  margin: auto;
+  margin-top: 0;
+}
+
+.sign-up-page .section-body {
+  display: grid;
+  gap: clamp(2rem, 1rem + 2vh, 4rem);
+  max-width: min(90vw, 1000px);
+  margin-inline: auto;
+}
+
+.sign-up-page .special-icon {
+  display: none;
+}
+
+@media only screen and (min-width: 500px) {
+  .sign-up-page .section-body {
+    grid-template-columns: 1fr 4fr;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .sign-up-page .special-icon {
+    display: block;
+  }
+  .sign-up-page .section-body {
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+}
+
+/*--------------
   Form Success Page 
   --------------*/
 .success-message {
@@ -1011,8 +1046,7 @@ img.newsletter-hero {
 }
 
 .philosophy-page .section-body,
-.information-page .section-body,
-.sign-up-page .section-body {
+.information-page .section-body {
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 1rem + 2vh, 4rem);
@@ -1177,19 +1211,25 @@ img.xsmall {
 
 @media only screen and (min-width: 1000px) {
   .about-us-page .section-body {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+    	'left right-up'
+	'left right-down';
     text-align: justify;
   }
 
-  .about-us-page img {
+  .about-us-page .content {
+    grid-area: left;
+  }
+
+  .about-us-page .about-us-image {
+    grid-area: right-up;
     margin-left: 2rem;
     margin-block: 0;
   }
-
-  .about-us-page .body-left {
-    max-width: 600px;
-    margin-inline: 0;
+  .about-us-page .timeline {
+    margin-left: 2rem;
+    grid-area: right-down;
   }
 }
 
